@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "universities": [
+    {
+      "id": "muhs",
+      "name": "Maharashtra University of Health Sciences (MUHS)",
+      "state": "Maharashtra",
+      "officialUrl": "https://www.muhs.ac.in/",
+      "status": "University to investigate; exam scheme and cohort applicability not yet verified"
+    },
+    {
+      "id": "other-university",
+      "name": "Other / not listed",
+      "state": "",
+      "officialUrl": "",
+      "status": "Add a university-specific source before asserting its scheme"
+    }
+  ]
+}
