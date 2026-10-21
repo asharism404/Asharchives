@@ -6,7 +6,7 @@
 window.ASHARCHIVES_VIDEOS = {
   // Anatomy
   "anatomy": {
-    "Introduction to anatomy": "",
+    "Introduction to anatomy": "https://drive.google.com/file/d/13q5wF0a7MUC404FmCTXdL8uOSjFKEEQs/view?usp=drivesdk",
     "Upper limb: overview": "",
     "Brachial plexus": "",
     "Thorax: overview": "",
