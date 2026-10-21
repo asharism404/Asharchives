@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Course — Asharchives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lecture.css">
+  <link rel="stylesheet" href="glass.css">
+  <script src="videos.js" defer></script>
+  <script src="lecture.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a>
+      <div class="topbar-actions">
+        <a class="back-link" href="index.html">← <span>All subjects</span></a>
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch light/dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.6 8.6 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <nav class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span id="breadcrumbSubject">Subject</span></nav>
+      <section class="course-hero">
+        <div class="course-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span id="courseYear">MBBS COURSE</span></p>
+          <h1 id="courseTitle">Loading subject…</h1>
+          <p id="courseDescription" class="course-description">Your course topics will appear here.</p>
+          <div class="course-meta"><span>◷ Self-paced</span><span>•</span><span id="topicCount">0 topics</span></div>
+          <div class="course-progress"><div class="progress-label"><span>Course progress</span><strong id="progressText">0%</strong></div><div class="progress-track"><span id="progressBar"></span></div></div>
+        </div>
+        <div class="course-art" aria-hidden="true"><div class="art-orbit"></div><div class="art-circle"><span id="courseEmoji">📚</span></div><span class="art-star star-one">✦</span><span class="art-star star-two">✳</span><span class="art-label">LEARN AT YOUR PACE</span></div>
+      </section>
+
+      <div class="learning-layout">
+        <section class="player-column">
+          <div class="section-title-row"><div><p class="eyebrow muted-eyebrow">NOW LEARNING</p><h2 id="lectureTitle">Select a lecture</h2></div><button class="save-button" id="saveButton" type="button" aria-pressed="false">♡ <span>Save</span></button></div>
+          <div class="video-frame" id="videoFrame">
+            <div class="video-placeholder" id="videoPlaceholder">
+              <div class="play-bubble">▶</div><h3>Your lecture player</h3><p>Choose a topic, then add its Google Drive file ID to play your video here.</p>
+              <button class="outline-button" id="addDriveButton" type="button">Add Drive video ID</button>
+            </div>
+            <iframe id="drivePlayer" title="Lecture video player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen hidden></iframe>
+          </div>
+          <div class="lecture-under">
+            <div><p class="eyebrow muted-eyebrow">ABOUT THIS TOPIC</p><p id="lectureDescription" class="lecture-description">Select a topic from the list to view its details.</p></div>
+            <button class="complete-button" id="completeButton" type="button">Mark as complete ✓</button>
+          </div>
+          <section class="notes-card"><div class="notes-heading"><div><p class="eyebrow muted-eyebrow">YOUR PRIVATE NOTES</p><h3>Quick notes</h3></div><span class="notes-status" id="notesStatus">Saved on this device</span></div><textarea id="lectureNotes" placeholder="Write a reminder, a clinical pearl or a question to revisit…"></textarea></section>
+        </section>
+
+        <aside class="playlist-card">
+          <div class="playlist-heading"><div><p class="eyebrow muted-eyebrow">COURSE CONTENT</p><h2>Lecture playlist</h2></div><span class="playlist-count" id="playlistCount">0</span></div>
+          <label class="playlist-search"><span>⌕</span><input id="lectureSearch" type="search" placeholder="Find a topic…"></label>
+          <div class="playlist-list" id="playlistList"></div>
+          <p class="playlist-footnote">Sample topic list. Replace with your own authorised lecture catalogue.</p>
+        </aside>
+      </div>
+      <div class="course-footer"><a href="index.html">← Back to all subjects</a><button id="shareButton" class="text-button" type="button">Copy course link ↗</button></div>
+    </main>
+    <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a><span>Study steadily. Your future patients are worth it.</span><span class="footer-note">Progress and notes stay in this browser.</span></footer>
+  </div>
+</body>
+</html>

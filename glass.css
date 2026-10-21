@@ -1,0 +1,73 @@
+/* Asharchives — frosted glass + motion layer. Loads AFTER styles.css / lecture.css; delete this file to get the original look back. */
+:root{--glass:rgba(255,255,255,.52);--glass-hi:rgba(255,255,255,.76);--glass-edge:rgba(255,255,255,.78);--glass-sh:0 10px 34px rgba(62,72,140,.13),inset 0 1px 0 rgba(255,255,255,.85);--fx:blur(18px) saturate(165%);--hero:linear-gradient(135deg,rgba(226,231,255,.8),rgba(255,255,255,.42));--b1:#ffe27a;--b2:#b9c4ff;--b3:#f3c9ff}
+:root[data-theme="dark"]{--glass:rgba(34,38,60,.5);--glass-hi:rgba(50,56,86,.72);--glass-edge:rgba(255,255,255,.11);--glass-sh:0 10px 34px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.09);--hero:linear-gradient(135deg,rgba(52,60,104,.74),rgba(30,33,52,.45));--b1:#8a7410;--b2:#3b4aa8;--b3:#6a2f8f}
+
+/* living background the glass blurs against */
+body{min-height:100vh;animation:fadeIn .6s backwards}
+body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(80px);opacity:.6;pointer-events:none}
+body::before{width:46vw;height:46vw;max-width:560px;max-height:560px;top:-8%;right:-6%;background:radial-gradient(circle,var(--b1),transparent 68%);animation:drift 20s ease-in-out infinite alternate}
+body::after{width:52vw;height:52vw;max-width:640px;max-height:640px;bottom:-12%;left:-10%;background:radial-gradient(circle,var(--b2),var(--b3) 45%,transparent 70%);animation:drift 26s ease-in-out infinite alternate-reverse}
+
+/* glass surfaces */
+.topbar,.searchbox,.icon-button,.save-button,.playlist-search,.year-select-wrap select,.hero-card,.daily-card,.subject-card,.educator-banner,.course-hero,.notes-card,.playlist-card,.back-link{-webkit-backdrop-filter:var(--fx);backdrop-filter:var(--fx)}
+.topbar,.searchbox,.icon-button,.save-button,.playlist-search,.year-select-wrap select,.subject-card,.daily-card,.educator-banner,.notes-card,.playlist-card,.back-link,.topic-item{background-color:var(--glass);border-color:var(--glass-edge)}
+.searchbox,.icon-button,.save-button,.playlist-search,.year-select-wrap select,.subject-card,.daily-card,.educator-banner,.notes-card,.playlist-card,.topbar,.back-link{box-shadow:var(--glass-sh)}
+.hero-card,.course-hero{background:var(--hero);border:1px solid var(--glass-edge);box-shadow:var(--glass-sh)}
+.save-button.is-saved{background-color:#fff3bf;border-color:#ffe17a}
+.notes-card textarea{background:var(--glass);border-color:var(--glass-edge)}
+.notes-card textarea:focus{box-shadow:0 0 0 3px rgba(255,210,26,.35)}
+.topic-number{background:var(--glass-hi)}
+.topic-item.active{background:var(--glass-hi);border-color:rgba(255,210,26,.6);box-shadow:0 8px 22px rgba(255,210,26,.18)}
+.video-frame{border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(30,35,80,.28)}
+.video-frame iframe{animation:fadeIn .6s backwards}
+
+/* floating glass nav */
+.topbar{position:sticky;top:12px;z-index:50;height:68px;margin-top:12px;padding:0 14px;border:1px solid var(--glass-edge);border-radius:22px}
+.back-link{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 14px;border:1px solid var(--glass-edge);border-radius:14px;font-size:13px;font-weight:700;transition:transform .2s}
+.back-link:hover{transform:translateX(-3px)}
+
+/* entrance animations (backwards-fill so hover transforms still work) */
+.hero-card,.course-hero{animation:rise .7s cubic-bezier(.2,.8,.2,1) backwards}
+.daily-card{animation:rise .7s .12s cubic-bezier(.2,.8,.2,1) backwards}
+.section-block,.educator-banner,.learning-layout{animation:rise .7s .2s cubic-bezier(.2,.8,.2,1) backwards}
+.subject-card{animation:rise .5s cubic-bezier(.2,.8,.2,1) backwards;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s}
+.subject-card:nth-child(3n+2){animation-delay:.07s}.subject-card:nth-child(3n){animation-delay:.14s}
+
+/* hover: lift, sheen sweep, icon tilt */
+.subject-card::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);transform:translateX(-120%);transition:transform .8s ease;pointer-events:none}
+.subject-card:hover{transform:translateY(-6px) scale(1.015);border-color:rgba(255,210,26,.6);box-shadow:0 18px 44px rgba(62,72,140,.22),inset 0 1px 0 rgba(255,255,255,.9)}
+.subject-card:hover::before{transform:translateX(120%)}
+.subject-arrow,.subject-icon,.primary-button span,.icon-button svg,.brand-mark{transition:transform .3s}
+.subject-card:hover .subject-arrow{transform:translate(3px,-3px)}
+.subject-card:hover .subject-icon{transform:rotate(-8deg) scale(1.1)}
+.primary-button:hover{transform:translateY(-3px);box-shadow:0 12px 26px #d9b00040}.primary-button:hover span{transform:translate(3px,-3px)}
+.icon-button:hover svg{transform:rotate(25deg)}.brand:hover .brand-mark{transform:rotate(-8deg) scale(1.08)}
+.icon-button,.save-button,.complete-button,.outline-button{transition:transform .2s,box-shadow .2s,background .2s}
+.icon-button:hover,.save-button:hover,.complete-button:hover,.outline-button:hover{transform:translateY(-2px)}
+.icon-button:active,.save-button:active,.complete-button:active,.outline-button:active{transform:scale(.95)}
+.topic-item{transition:transform .25s,border-color .2s,background .2s,box-shadow .25s}.topic-item:hover{transform:translateX(4px);border-color:var(--glass-edge)}
+
+/* ambient motion */
+.orbit,.art-orbit{animation:spin 50s linear infinite}.orbit-two{animation-direction:reverse;animation-duration:70s}.art-orbit{animation-name:spinB}
+.anatomy-card{animation:floatA 6s ease-in-out infinite}.art-circle{animation:floatB 7s ease-in-out infinite}
+.art-star,.anatomy-spark{animation:twinkle 3.6s ease-in-out infinite}.star-two{animation-delay:1.2s}
+.brand-mark,.streak-flame{animation:glow 3.2s ease-in-out infinite}
+.play-bubble{animation:pulse 2.4s ease-out infinite}
+.week-dot.active{animation:pop .5s .3s backwards}
+.progress-track span{background:linear-gradient(90deg,#ffd21a,#ffe98a,#ffd21a);background-size:200% 100%;animation:shimmer 2.6s linear infinite}
+
+@keyframes rise{from{opacity:0;transform:translateY(22px) scale(.98)}}
+@keyframes fadeIn{from{opacity:0}}
+@keyframes drift{to{transform:translate(6vw,-5vh) scale(1.15)}}
+@keyframes spin{to{transform:rotate(335deg)}}
+@keyframes spinB{to{transform:rotate(395deg)}}
+@keyframes floatA{50%{transform:rotate(8deg) translateY(-12px)}}
+@keyframes floatB{50%{transform:rotate(7deg) translateY(-9px)}}
+@keyframes twinkle{50%{opacity:.35;transform:scale(.8) rotate(20deg)}}
+@keyframes glow{50%{box-shadow:0 5px 22px #ffd21a99}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #ffd21a88}70%,100%{box-shadow:0 0 0 18px #ffd21a00}}
+@keyframes shimmer{to{background-position:-200% 0}}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
+
+@media(max-width:560px){:root{--fx:blur(12px) saturate(150%)}.topbar{top:8px;height:60px;margin-top:8px;padding:0 10px}.searchbox:focus-within{left:8px;right:60px;background:var(--glass-hi)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
