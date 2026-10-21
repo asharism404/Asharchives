@@ -8,7 +8,7 @@ window.ASHARCHIVES_VIDEOS = {
   "anatomy": {
     "Introduction to anatomy": "https://drive.google.com/file/d/13q5wF0a7MUC404FmCTXdL8uOSjFKEEQs/view?usp=drivesdk",
     "Upper limb: overview": "https://drive.google.com/file/d/1uCtMyTyD-uAhNOS9gdRqaZ6vJWIc_aeE/view?usp=drivesdk",
-    "Brachial plexus": "",
+    "Brachial plexus": "https://youtu.be/UlDFSlRBeCE?si=v___t4J-JBfzVKbF",
     "Thorax: overview": "",
     "Heart and pericardium": "",
     "Lungs and pleura": "",
