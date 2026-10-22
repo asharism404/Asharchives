@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Flashcards — Asharchives</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("asharrow-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="glass.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="features.css">
+  <script src="subjects.js" defer></script>
+  <script src="nav.js" defer></script>
+  <script src="glass.js" defer></script>
+  <script src="flashcards.js" defer></script>
+</head>
+<body data-page="cards">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+        <a class="brand" href="index.html" aria-label="Asharchives home"><span class="brand-mark">A</span><span>Asharchives</span></a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch light/dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.6 8.6 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div>
+          <h1>Flashcards</h1>
+          <p>Write a question while the lecture is fresh. Flip, rate, and see it again just before you would forget it.</p>
+        </div>
+        <div class="head-stats" aria-label="Your deck">
+          <div><strong id="statTotal">0</strong><span>cards</span></div>
+          <div><strong id="statDue">0</strong><span>due now</span></div>
+          <div><strong id="statMastered">0</strong><span>mastered</span></div>
+        </div>
+      </section>
+
+      <div class="seg" id="viewTabs" role="tablist" aria-label="Flashcard views">
+        <button type="button" role="tab" id="tabStudy" data-view="study" aria-selected="true" aria-controls="viewStudy">Study</button>
+        <button type="button" role="tab" id="tabCreate" data-view="create" aria-selected="false" aria-controls="viewCreate">Create</button>
+        <button type="button" role="tab" id="tabLibrary" data-view="library" aria-selected="false" aria-controls="viewLibrary">All cards <span class="seg-count" id="libCount">0</span></button>
+      </div>
+
+      <!-- STUDY -->
+      <section class="view" id="viewStudy" role="tabpanel" aria-labelledby="tabStudy">
+        <div class="panel setup" id="studySetup">
+          <div class="setup-row">
+            <label class="field"><span>Subject</span><select id="studySubject"></select></label>
+            <div class="field"><span>Cards to study</span>
+              <div class="seg seg-small" role="group" aria-label="Which cards">
+                <button type="button" data-scope="due" aria-pressed="true">Due now <b id="scopeDue">0</b></button>
+                <button type="button" data-scope="all" aria-pressed="false">All <b id="scopeAll">0</b></button>
+              </div>
+            </div>
+          </div>
+          <div><button class="btn btn-primary" id="startStudy" type="button">Start studying</button></div>
+          <p class="hint" id="studyHint"></p>
+        </div>
+
+        <div id="studyRun" hidden>
+          <div class="run-top"><span id="runCount">Card 1 of 1</span><div class="run-progress"><span id="runBar"></span></div><button class="btn btn-quiet" id="endStudy" type="button">End session</button></div>
+          <div class="flip" id="flip" tabindex="0" role="button" aria-label="Flip card" aria-pressed="false">
+            <div class="flip-inner">
+              <div class="face front"><span class="face-label">Question</span><div class="face-text"><span id="faceQ"></span></div><span class="face-hint">Tap the card to see the answer</span></div>
+              <div class="face back"><span class="face-label">Answer</span><div class="face-text"><span id="faceA"></span></div><span class="face-hint" id="faceMeta"></span></div>
+            </div>
+          </div>
+          <div class="rate" id="rate" hidden>
+            <button type="button" data-rate="again">Again<small id="hintAgain">in a moment</small></button>
+            <button type="button" data-rate="good">Good<small id="hintGood"></small></button>
+            <button type="button" data-rate="easy">Easy<small id="hintEasy"></small></button>
+          </div>
+          <p class="hint rate-keys" id="rateKeys">Space flips the card. After flipping: 1 Again, 2 Good, 3 Easy.</p>
+        </div>
+
+        <div class="panel done" id="studyDone" hidden>
+          <h2>Session complete</h2>
+          <p class="hint" id="doneMsg"></p>
+          <div class="done-stats"><div><strong id="doneSeen">0</strong><span>cards seen</span></div><div><strong id="doneAgain">0</strong><span>marked again</span></div><div><strong id="doneEasy">0</strong><span>got it</span></div></div>
+          <button class="btn btn-primary" id="doneBack" type="button">Back to decks</button>
+        </div>
+      </section>
+
+      <!-- CREATE -->
+      <section class="view" id="viewCreate" role="tabpanel" aria-labelledby="tabCreate" hidden>
+        <div class="create-grid">
+          <form class="panel" id="cardForm" autocomplete="off">
+            <h2 id="formTitle">New card</h2>
+            <p class="hint" style="margin-bottom:16px">One idea per card works best. Keep the answer short enough to say out loud.</p>
+            <div class="field-row">
+              <label class="field"><span>Subject</span><select id="cSubject" required></select></label>
+              <label class="field"><span>Lecture topic <i>(optional)</i></span><select id="cTopic"></select></label>
+            </div>
+            <label class="field"><span>Question</span><textarea id="cQ" rows="3" required placeholder="Which nerve is injured in a fracture of the surgical neck of the humerus?"></textarea></label>
+            <label class="field"><span>Answer</span><textarea id="cA" rows="3" required placeholder="Axillary nerve"></textarea></label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" id="cSubmit">Add card</button>
+              <button class="btn btn-quiet" type="button" id="cCancel" hidden>Cancel</button>
+              <span class="hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to add</span>
+            </div>
+          </form>
+
+          <aside class="panel">
+            <h2>Add many at once</h2>
+            <p class="hint" style="margin-bottom:12px">One card per line, with <code>::</code> between question and answer. Pasting two columns from a spreadsheet works too.</p>
+            <textarea id="bulk" rows="7" placeholder="Largest cranial nerve :: Trigeminal (V)&#10;Nerve supply of diaphragm :: Phrenic nerve (C3–C5)"></textarea>
+            <div class="form-actions"><button class="btn" type="button" id="bulkAdd" disabled>Add cards</button><span class="hint" id="bulkInfo"></span></div>
+            <div class="recent" id="recentBox" hidden><h3>Just added</h3><ul id="recentList"></ul></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- LIBRARY -->
+      <section class="view" id="viewLibrary" role="tabpanel" aria-labelledby="tabLibrary" hidden>
+        <div class="toolbar">
+          <input id="libSearch" type="search" placeholder="Search questions and answers" aria-label="Search cards">
+          <select id="libSubject" aria-label="Filter by subject"></select>
+          <button class="btn" type="button" id="exportCards">Export</button>
+        </div>
+        <p class="hint" id="libInfo" style="margin-bottom:12px"></p>
+        <div class="card-list" id="cardList"></div>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a><span>Co-Founded by Aaisha and Asharr.</span><span class="footer-note">Cards are saved on this device.</span></footer>
+  </div>
+</body>
+</html>

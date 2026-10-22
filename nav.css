@@ -1,0 +1,72 @@
+/* Asharchives — sidebar, hamburger, bottom tab bar, toast.
+   Uses the colour/glass variables from styles.css + glass.css. Load after glass.css. */
+
+:root{--dock-bg:rgba(255,255,255,.93)}
+:root[data-theme="dark"]{--dock-bg:rgba(30,33,52,.94)}
+.icon-button:focus-visible,.back-link:focus-visible,.brand:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- hamburger in the topbar ---------- */
+.topbar-left{display:flex;align-items:center;gap:10px;min-width:0}
+.menu-button svg{width:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.menu-button:hover svg{transform:none}
+
+/* ---------- drawer ---------- */
+html.nav-open{overflow:hidden}
+.nav-overlay{position:fixed;inset:0;z-index:90;background:rgba(18,20,38,.42);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .25s,visibility 0s .25s}
+html.nav-open .nav-overlay{opacity:1;visibility:visible;transition:opacity .25s}
+.drawer{position:fixed;z-index:100;top:0;bottom:0;left:0;width:min(86vw,320px);display:flex;flex-direction:column;padding:18px 16px calc(16px + env(safe-area-inset-bottom,0px));
+  background:var(--glass-hi);-webkit-backdrop-filter:blur(26px) saturate(170%);backdrop-filter:blur(26px) saturate(170%);
+  border-right:1px solid var(--glass-edge);box-shadow:18px 0 50px rgba(20,24,60,.22);
+  transform:translateX(-102%);visibility:hidden;transition:transform .32s cubic-bezier(.2,.8,.2,1),visibility 0s .32s;overflow-y:auto;overscroll-behavior:contain}
+html.nav-open .drawer{transform:none;visibility:visible;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:2px 2px 18px}
+.drawer-head .icon-button svg{width:19px}
+.drawer-nav{display:flex;flex-direction:column;gap:4px}
+.drawer-label{margin:16px 10px 6px;font-size:12px;font-weight:700;color:var(--muted)}
+.drawer-label:first-child{margin-top:4px}
+.drawer-link{display:flex;align-items:center;gap:13px;min-height:48px;padding:0 12px;border-radius:14px;font-size:15px;font-weight:600;color:var(--ink);border:1px solid transparent;transition:background .18s,border-color .18s}
+.drawer-link svg{width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;color:var(--muted)}
+.drawer-link:hover{background:var(--glass)}
+.drawer-link.is-active{background:var(--glass);border-color:rgba(255,210,26,.65);box-shadow:inset 3px 0 0 var(--accent)}
+.drawer-link.is-active svg{color:var(--ink)}
+.drawer-link:focus-visible,.dock-tab:focus-visible,.drawer-theme:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.badge{margin-left:auto;min-width:24px;padding:3px 8px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;font-style:normal;text-align:center}
+.badge.live{font-variant-numeric:tabular-nums}
+.drawer-foot{margin-top:auto;padding-top:20px}
+.drawer-today{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px 8px;border-radius:16px;background:var(--glass);border:1px solid var(--glass-edge)}
+.drawer-today div{display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+.drawer-today strong{font:800 20px Manrope,sans-serif;letter-spacing:-.5px}
+.drawer-today span{font-size:11px;color:var(--muted)}
+.drawer-theme{display:flex;align-items:center;gap:12px;width:100%;margin-top:10px;min-height:46px;padding:0 12px;border:1px solid var(--glass-edge);border-radius:14px;background:var(--glass);color:var(--ink);font-size:14px;font-weight:600;cursor:pointer}
+.drawer-theme svg{width:20px;fill:none;stroke:currentColor;stroke-width:1.7}
+.drawer-theme .sun-icon,.drawer-theme .moon-icon{display:none}
+.drawer-theme .sun-icon{display:grid}
+:root[data-theme="dark"] .drawer-theme .sun-icon{display:none}
+:root[data-theme="dark"] .drawer-theme .moon-icon{display:grid}
+.drawer-note{margin:12px 4px 0;font-size:11px;color:var(--muted)}
+
+/* ---------- bottom tab bar ---------- */
+.dock{position:fixed;z-index:60;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(calc(100% - 24px),440px);display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;
+  border-radius:24px;background:var(--dock-bg);border:1px solid var(--glass-edge);-webkit-backdrop-filter:blur(22px) saturate(170%);backdrop-filter:blur(22px) saturate(170%);box-shadow:0 14px 40px rgba(30,36,90,.22),inset 0 1px 0 rgba(255,255,255,.5)}
+.dock-tab{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:18px;color:var(--muted);font-size:11px;font-weight:700;transition:background .2s,color .2s}
+.dock-tab svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dock-tab:hover{color:var(--ink)}
+.dock-tab.is-active{background:var(--accent);color:var(--accent-ink);box-shadow:0 6px 16px rgba(217,176,0,.3)}
+.dock-label{font-variant-numeric:tabular-nums;line-height:1}
+.dock-tab.is-live::after,.dock-tab.is-paused::after{content:"";position:absolute;top:8px;right:calc(50% - 20px);width:8px;height:8px;border-radius:50%;background:#e5484d;box-shadow:0 0 0 2px var(--dock-bg);animation:beat 1.8s ease-in-out infinite}
+.dock-tab.is-paused::after{background:var(--muted);animation:none}
+.dock-tab.is-live:not(.is-active){color:var(--ink)}
+body.has-dock .app-shell{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+
+/* ---------- toast ---------- */
+.toast{position:fixed;z-index:120;left:50%;bottom:calc(98px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);display:flex;align-items:center;gap:14px;max-width:min(calc(100% - 28px),420px);padding:12px 16px;border-radius:16px;
+  background:#1f2236;color:#f4f5ff;font-size:13px;font-weight:600;line-height:1.4;box-shadow:0 16px 40px rgba(10,12,30,.35);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s}
+.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.toast button{border:0;background:transparent;color:var(--accent);font:800 13px "DM Sans",sans-serif;cursor:pointer;padding:4px 2px}
+
+@media(max-width:560px){
+  .topbar-left{gap:8px}
+  .dock{bottom:calc(8px + env(safe-area-inset-bottom,0px));width:calc(100% - 16px)}
+  .toast{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+}
+@media(prefers-reduced-motion:reduce){.drawer,.nav-overlay,.toast{transition:none!important}}

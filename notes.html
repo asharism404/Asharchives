@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Notes — Asharchives</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("asharrow-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="glass.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="features.css">
+  <script src="subjects.js" defer></script>
+  <script src="nav.js" defer></script>
+  <script src="glass.js" defer></script>
+  <script src="notes.js" defer></script>
+</head>
+<body data-page="notes">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+        <a class="brand" href="index.html" aria-label="Asharchives home"><span class="brand-mark">A</span><span>Asharchives</span></a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch light/dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.6 8.6 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div>
+          <h1>Notes</h1>
+          <p>After a lecture, close the video and write what you remember. Recalling it yourself is what builds memory.</p>
+        </div>
+        <div class="head-stats" aria-label="Your notes">
+          <div><strong id="statNotes">0</strong><span>notes</span></div>
+          <div><strong id="statPinned">0</strong><span>pinned</span></div>
+          <div><strong id="statLecture">0</strong><span>from lectures</span></div>
+        </div>
+      </section>
+
+      <div class="seg" role="tablist" aria-label="Note collections">
+        <button type="button" role="tab" id="tabMine" data-tab="mine" aria-selected="true">My notes</button>
+        <button type="button" role="tab" id="tabLectures" data-tab="lectures" aria-selected="false">From lectures</button>
+      </div>
+
+      <section class="view" id="composerView">
+        <form class="panel composer" id="noteForm" autocomplete="off">
+          <div class="note-top"><h2 id="formTitle">What did you retain?</h2><span class="hint" id="draftStatus" aria-live="polite"></span></div>
+          <div class="field-row" style="margin-top:14px">
+            <label class="field"><span>Subject</span><select id="nSubject"></select></label>
+            <label class="field"><span>Lecture <i>(optional)</i></span><select id="nTopic"></select></label>
+          </div>
+          <input class="input" id="nTitle" type="text" maxlength="120" placeholder="Title (optional)" aria-label="Note title">
+          <div class="starters" role="group" aria-label="Add a section">
+            <span class="hint">Add a section:</span>
+            <button class="chip" type="button" data-starter="Key points">Key points</button>
+            <button class="chip" type="button" data-starter="Clinical pearl">Clinical pearl</button>
+            <button class="chip" type="button" data-starter="Mnemonic">Mnemonic</button>
+            <button class="chip" type="button" data-starter="Still unclear">Still unclear</button>
+          </div>
+          <textarea id="nBody" rows="6" placeholder="Write it from memory, without looking back at the lecture."></textarea>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="nSubmit">Save note</button>
+            <button class="btn btn-quiet" type="button" id="nCancel" hidden>Cancel</button>
+            <span class="hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to save</span>
+          </div>
+        </form>
+      </section>
+
+      <div class="toolbar">
+        <input id="noteSearch" type="search" placeholder="Search notes" aria-label="Search notes">
+        <select id="noteSubject" aria-label="Filter by subject"></select>
+        <button class="btn" type="button" id="exportNotes">Export</button>
+      </div>
+      <p class="hint" id="noteInfo" style="margin-bottom:12px"></p>
+      <div class="notes-grid" id="noteList"></div>
+    </main>
+    <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a><span>Co-Founded by Aaisha and Asharr.</span><span class="footer-note">Notes are saved on this device.</span></footer>
+  </div>
+</body>
+</html>

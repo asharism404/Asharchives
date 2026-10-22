@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Focus timer — Asharchives</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("asharrow-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="glass.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="features.css">
+  <script src="subjects.js" defer></script>
+  <script src="nav.js" defer></script>
+  <script src="glass.js" defer></script>
+  <script src="focus.js" defer></script>
+</head>
+<body data-page="focus">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+        <a class="brand" href="index.html" aria-label="Asharchives home"><span class="brand-mark">A</span><span>Asharchives</span></a>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch light/dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.6 8.6 0 1 0 20.3 15.4Z"></path></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div>
+          <h1>Focus timer</h1>
+          <p>Study in short, protected blocks with a break after each. The timer keeps running while you move around the site.</p>
+        </div>
+        <div class="head-stats" aria-label="Today">
+          <div><strong id="headToday">0</strong><span>min today</span></div>
+          <div><strong id="headSessions">0</strong><span>sessions</span></div>
+        </div>
+      </section>
+
+      <div class="focus-layout">
+        <section class="panel timer-card" id="timerCard" aria-label="Timer">
+          <div class="seg" id="modeSeg" role="group" aria-label="Timer mode">
+            <button type="button" data-mode="focus" aria-pressed="true">Focus</button>
+            <button type="button" data-mode="break" aria-pressed="false">Break</button>
+          </div>
+
+          <div class="ring-wrap">
+            <svg viewBox="0 0 300 300" aria-hidden="true">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd21a"/><stop offset="1" stop-color="#ffec9a"/></linearGradient>
+                <linearGradient id="ringGradBreak" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ac08a"/><stop offset="1" stop-color="#8be6c6"/></linearGradient>
+              </defs>
+              <circle class="ring-track" cx="150" cy="150" r="130"/>
+              <circle class="ring-bar" id="ringBar" cx="150" cy="150" r="130"/>
+            </svg>
+            <div class="ring-center">
+              <div class="ring-time" id="ringTime" role="timer" aria-label="Time remaining">25:00</div>
+              <div class="ring-sub"><span class="eyebrow-dot"></span><span id="ringSub">Ready to focus</span></div>
+            </div>
+          </div>
+
+          <div class="timer-controls">
+            <button class="btn" type="button" id="btnReset" aria-label="Reset timer" title="Reset"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.6-5.9"/><path d="M4 4.5v4h4"/></svg></button>
+            <button class="btn btn-primary btn-main" type="button" id="btnMain">Start focus</button>
+            <button class="btn" type="button" id="btnSkip" aria-label="Skip to next phase" title="Skip"><svg viewBox="0 0 24 24"><path d="M6 5.5v13l9-6.5-9-6.5Z"/><path d="M18 5.5v13"/></svg></button>
+          </div>
+
+          <div class="timer-settings">
+            <label class="field"><span>What are you studying? <i>(optional)</i></span><select id="fSubject"></select></label>
+            <div class="field"><span>Session length</span>
+              <div class="presets" id="presets" role="group" aria-label="Session length">
+                <button class="chip" type="button" data-preset="25,5">25 / 5</button>
+                <button class="chip" type="button" data-preset="50,10">50 / 10</button>
+                <button class="chip" type="button" data-preset="15,3">15 / 3</button>
+                <button class="chip" type="button" data-preset="custom">Custom</button>
+              </div>
+            </div>
+            <div class="custom-row" id="customRow" hidden>
+              <label class="field"><span>Focus (minutes)</span><input id="cFocus" type="number" min="1" max="180" inputmode="numeric"></label>
+              <label class="field"><span>Break (minutes)</span><input id="cBreak" type="number" min="1" max="60" inputmode="numeric"></label>
+            </div>
+            <p class="hint">Press <kbd>Space</kbd> to start or pause. Presets read as focus / break minutes.</p>
+          </div>
+          <div class="ecg" data-ecg aria-hidden="true"></div>
+        </section>
+
+        <aside class="panel stats-card" aria-label="Your focus time">
+          <h2>Your focus time</h2>
+          <div class="big-stats">
+            <div><strong id="sToday">0</strong><span>minutes today</span></div>
+            <div><strong id="sSessions">0</strong><span>sessions today</span></div>
+            <div><strong id="sWeek">0</strong><span>minutes this week</span></div>
+            <div><strong id="sTotal">0</strong><span>hours in total</span></div>
+          </div>
+          <h3>Last 7 days</h3>
+          <div class="week-bars" id="weekBars"></div>
+          <h3>Recent sessions</h3>
+          <ul class="session-list" id="sessionList"></ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a><span>Co-Founded by Aaisha and Asharr.</span><span class="footer-note">Sessions are saved on this device.</span></footer>
+  </div>
+</body>
+</html>
