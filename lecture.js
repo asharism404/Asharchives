@@ -154,7 +154,7 @@
   function renderSelected(){
     const title=subject.topics[selectedTopic];
     $("lectureTitle").textContent=title;
-    $("lectureDescription").textContent=`Study notes and video for ${title.toLowerCase()} in ${subject.name}. Paste the video link in the player (YouTube, Google Drive or a direct file). This topic list is a starter template and should be checked against your syllabus.`;
+    $("lectureDescription").textContent=`Study notes and video for ${title.toLowerCase()} in ${subject.name}. Paste the video link in the player (YouTube, Google Drive or a direct file). .`;
     const key=topicKey(selectedTopic);
     $("saveButton").classList.toggle("is-saved",saved.includes(key));
     $("saveButton").setAttribute("aria-pressed",String(saved.includes(key)));
