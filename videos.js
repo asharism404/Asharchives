@@ -71,18 +71,18 @@ window.ASHARCHIVES_VIDEOS = {
   },
   // Pharmacology
   "pharmacology": {
-    "Introduction and Routes of Drug Administration": "",
-    "Pharmacokinetics: Absorption": "",
-    "Pharmacokinetics: Distribution": "",
-    "Pharmacokinetics: Metabolism": "",
-    "Pharmacokinetics: Excretion": "",
-    "Kinetics of Elimination": "",
-    "Pharmacodynamics: Introduction and Enzyme Inhibitors": "",
+    "Introduction and Routes of Drug Administration": "https://drive.google.com/file/d/1BRXpyL8zq8F-AwVrfhRNUMh-L1X_QuOx/view?usp=drive_link",
+    "Pharmacokinetics: Absorption": "https://drive.google.com/file/d/1tJjUaFvhBD-Vkda2jXEWLjL4Rvj49vpS/view?usp=drive_link",
+    "Pharmacokinetics: Distribution": "https://drive.google.com/file/d/1EISGMPnI2sS3YDTkA7b64FcpZMD3_Jaf/view?usp=drive_link",
+    "Pharmacokinetics: Metabolism": "https://drive.google.com/file/d/1j5-ovmLSptxesJy2-edRFEfYrqYr7P8O/view?usp=drive_link",
+    "Pharmacokinetics: Excretion": "https://drive.google.com/file/d/1_yIRjb0LEXmEKfdcqJZATDYM523KYBv7/view?usp=drive_link",
+    "Kinetics of Elimination": "https://drive.google.com/file/d/1VzKBT9PMegaZmQ87oMJJgMpfCq6b47Lo/view?usp=drive_link",
+    "Pharmacodynamics: Introduction and Enzyme Inhibitors": "https://drive.google.com/file/d/1x0O2Ss0xbGDx0MVrTDWegmmJxYRVWLvg/view?usp=drive_link",
     "Pharmacodynamics: Receptors": "",
-    "Dose Response Curve": "",
+    "Dose Response Curve": "https://drive.google.com/file/d/1Nctfh6QtkRSqRDPg9f0lDkHEXrFUVxMr/view?usp=drive_link",
     "Clinical Trials and Pharmacovigilance": "",
-    "Factors Affecting Drug Action": "",
-    "Combined effect of Drugs": "",
+    "Factors Affecting Drug Action": "https://drive.google.com/file/d/1PcCzjk5YX0Zm8MxT2jgGpKhULJFuQazw/view?usp=drive_link",
+    "Combined effect of Drugs": "https://drive.google.com/file/d/1N6FD4tMJCu8fYVQc6Aq904Rl5Or95iAS/view?usp=drive_link",
     "Practicals in General Pharmacology": "",
     "Basics and Cholinergic Drugs": "",
     "Anti-Cholinergic Drugs": "",
@@ -319,3 +319,4 @@ window.ASHARCHIVES_VIDEOS = {
     "Radiology revision": "",
   },
 };
+
