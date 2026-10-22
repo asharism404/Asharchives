@@ -154,7 +154,7 @@
   function renderSelected(){
     const title=subject.topics[selectedTopic];
     $("lectureTitle").textContent=title;
-    $("lectureDescription").textContent=`Study notes and video for ${title.toLowerCase()} in ${subject.name}. Paste the video link in the player (YouTube, Google Drive or a direct file). .`;
+    $("lectureDescription").textContent=`Study notes and video for ${title.toLowerCase()} in ${subject.name}. If you encounter any issue while playing the lecture please wait 5 seconds without touching the screen (Prefer Fullscreen mode) .`;
     const key=topicKey(selectedTopic);
     $("saveButton").classList.toggle("is-saved",saved.includes(key));
     $("saveButton").setAttribute("aria-pressed",String(saved.includes(key)));
