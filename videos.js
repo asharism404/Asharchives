@@ -45,8 +45,6 @@ window.ASHARCHIVES_VIDEOS = {
     "Osteology of Lower Limb (Part-1)": "",
     "Osteology of Lower Limb (Part-2)": "",
     "Gluteal Region": "",
-    "Gametogenesis"
-   : "",
   },
   // Physiology
   "physiology": {
