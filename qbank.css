@@ -1,0 +1,16 @@
+.qb-main{display:grid;gap:18px;padding:8px 0 40px}
+.qb-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.qb-bar select,.qb-card input,.qb-card select{padding:12px 14px;border-radius:14px;font:inherit;min-width:0}
+.qb-card{padding:22px;border-radius:22px;display:grid;gap:12px;background:var(--surface);box-shadow:var(--neo-shadow)}
+.qb-card[hidden]{display:none}
+.btn{padding:12px 18px;border-radius:14px;border:0;font:inherit;font-weight:700;cursor:pointer;background:var(--surface);color:var(--ink);box-shadow:var(--neo-shadow)}
+.qb-top{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted)}
+.qb-bar-track{height:8px;border-radius:99px;box-shadow:var(--neo-inset);overflow:hidden}
+.qb-bar-track i{display:block;height:100%;background:var(--accent);transition:width .4s ease}
+.qb-q{font-size:1.15rem;font-weight:700;line-height:1.4}
+.qb-opt{text-align:left;padding:14px 16px;border-radius:14px;border:0;font:inherit;cursor:pointer;background:var(--surface);color:var(--ink);box-shadow:var(--neo-shadow)}
+.qb-opt.right{outline:2px solid #34c77b}.qb-opt.wrong{outline:2px solid #ef5b5b;animation:qbShake .35s}
+.qb-exp{padding:12px 14px;border-radius:14px;box-shadow:var(--neo-inset);animation:qbIn .3s ease}
+.qb-score{font-size:2.4rem;font-weight:800}
+@keyframes qbShake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@keyframes qbIn{from{opacity:0;transform:translateY(8px)}}

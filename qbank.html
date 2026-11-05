@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Qbank — Asharchives</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("asharrow-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="glass.css"><link rel="stylesheet" href="nav.css"><link rel="stylesheet" href="qbank.css">
+<script src="videos.js" defer></script>
+  <script src="subjects.js" defer></script><script src="qbank-data.js" defer></script><script src="nav.js" defer></script><script src="glass.js" defer></script><script src="qbank.js" defer></script>
+<link rel="stylesheet" href="neumorphism.css"><link rel="stylesheet" href="anim.css">
+  <link rel="stylesheet" href="theme.css"><script src="anim.js" defer></script>
+</head><body data-page="qbank"><div class="app-shell">
+<header class="topbar"><div class="topbar-left">
+<button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+<a class="brand" href="index.html"><span class="brand-mark"><img src="logo-256.png" alt="" width="40" height="40"></span><span>Asharchives</span></a></div>
+<div class="topbar-actions"><button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch theme"><svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="moon-icon" viewBox="0 0 24 24"><path d="M20.3 15.4A8.5 8.5 0 0 1 8.6 3.7 8.6 8.6 0 1 0 20.3 15.4Z"></path></svg></button></div></header>
+<main class="qb-main">
+<div class="page-head"><p class="eyebrow muted-eyebrow">PRACTICE</p><h1>Question bank</h1><p class="section-subtitle">Pick a subject, answer, and see the explanation right away.</p></div>
+<div class="qb-bar"><select id="qbSubject" aria-label="Subject"></select><button class="btn btn-primary" id="qbStart" type="button">Start quiz</button><button class="btn" id="qbAddToggle" type="button">+ Add question</button></div>
+<section class="qb-card" id="qbAdd" hidden>
+<input id="aQ" placeholder="Question"><input id="aO1" placeholder="Option A"><input id="aO2" placeholder="Option B"><input id="aO3" placeholder="Option C"><input id="aO4" placeholder="Option D">
+<select id="aAns"><option value="0">Correct: A</option><option value="1">Correct: B</option><option value="2">Correct: C</option><option value="3">Correct: D</option></select><input id="aE" placeholder="Explanation (optional)">
+<button class="btn btn-primary" id="aSave" type="button">Save question</button></section>
+<section class="qb-card" id="qbQuiz" aria-live="polite"><p class="small-muted">Choose a subject and press Start.</p></section>
+<p class="small-muted" id="qbStats"></p>
+</main></div></body></html>

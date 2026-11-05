@@ -1,0 +1,48 @@
+
+/* AshArchives — full neumorphic redesign. This layer replaces the previous glassmorphism look. */
+:root{
+ color-scheme:light;
+ --bg:#e8e9ed; --surface:#e8e9ed; --surface-2:#e1e2e7; --ink:#24262d; --muted:#777b85;
+ --line:transparent; --accent:#ffd21a; --accent-ink:#282719; --blue:#e8e9ed; --lav:#e8e9ed;
+ --shadow:8px 8px 18px #c7c8cc,-8px -8px 18px #ffffff;
+ --neo-shadow:8px 8px 18px #c7c8cc,-8px -8px 18px #ffffff;
+ --neo-inset:inset 5px 5px 10px #c7c8cc,inset -5px -5px 10px #ffffff;
+ --glass:var(--surface); --glass-hi:var(--surface); --glass-edge:transparent;
+ --glass-sh:var(--neo-shadow); --fx:none; --hero:var(--surface); --b1:transparent;--b2:transparent;--b3:transparent;
+ --radius:20px;
+}
+:root[data-theme="dark"]{
+ color-scheme:dark;--bg:#24262b;--surface:#24262b;--surface-2:#202227;--ink:#f0f1f4;--muted:#a3a6af;
+ --line:transparent;--accent:#ffd21a;--accent-ink:#292613;--blue:#24262b;--lav:#24262b;
+ --shadow:8px 8px 18px #1b1c20,-8px -8px 18px #2d3036;
+ --neo-shadow:8px 8px 18px #1b1c20,-8px -8px 18px #2d3036;
+ --neo-inset:inset 5px 5px 10px #1b1c20,inset -5px -5px 10px #2d3036;
+ --glass:var(--surface);--glass-hi:var(--surface);--glass-edge:transparent;--glass-sh:var(--neo-shadow);--hero:var(--surface);
+}
+html,body{background:var(--bg)!important;color:var(--ink)}
+body{background-image:none!important}
+body::before,body::after{display:none!important;content:none!important}
+.app-shell{max-width:1320px}
+.topbar{background:var(--bg)!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.brand-mark{border-radius:12px;background:var(--surface)!important;box-shadow:var(--neo-shadow)!important;color:var(--ink)}
+.searchbox,.icon-button,.save-button,.playlist-search,.year-select-wrap select,.subject-card,.daily-card,.educator-banner,.notes-card,.playlist-card,.back-link,.topic-item,.panel,.page-head,.head-stats div,.seg,.course-hero,.hero-card,.drawer,.drawer-head,.topic-card,.stat-card,.feature-card{
+ background:var(--surface)!important;border:0!important;box-shadow:var(--neo-shadow)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+}
+.hero-card,.course-hero,.page-head{background:var(--surface)!important}
+.hero-card{border-radius:26px}
+.subject-card,.daily-card,.notes-card,.playlist-card,.panel,.feature-card{border-radius:20px}
+.searchbox,.icon-button,.save-button,.playlist-search,.year-select-wrap select,.back-link{border-radius:14px}
+input,textarea,select,.notes-card textarea,.searchbox input{background:var(--surface)!important;color:var(--ink)!important;border-color:transparent!important}
+input:focus,textarea:focus,select:focus,.searchbox:focus-within{outline:none!important;box-shadow:var(--neo-inset)!important}
+button,.btn,.chip,.flip,.icon-sm{transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.icon-button:hover,.subject-card:hover,.daily-card:hover,.playlist-card:hover,.back-link:hover,.btn:hover,.chip:hover{transform:translateY(-2px)}
+.icon-button:active,.btn:active,.chip:active,.flip:active{box-shadow:var(--neo-inset)!important;transform:translateY(0)}
+.seg button[aria-selected="true"],.seg button[aria-pressed="true"],.btn-primary,.primary-button{background:var(--accent)!important;color:var(--accent-ink)!important;border:0!important;box-shadow:4px 4px 10px #c7c8cc,-4px -4px 10px #fff!important}
+:root[data-theme="dark"] .seg button[aria-selected="true"],:root[data-theme="dark"] .seg button[aria-pressed="true"],:root[data-theme="dark"] .btn-primary,:root[data-theme="dark"] .primary-button{box-shadow:4px 4px 10px #1b1c20,-4px -4px 10px #2d3036!important}
+.drawer{border:0!important}
+.drawer-link.is-active{background:var(--surface)!important;box-shadow:var(--neo-inset)!important;border:0!important}
+.nav-overlay{backdrop-filter:none!important}
+.topic-number,.eyebrow-dot{box-shadow:var(--neo-shadow)}
+:root[data-theme="dark"] .save-button.is-saved{background:#514719!important}
+@media(max-width:700px){.app-shell{padding-left:18px;padding-right:18px}.hero-card,.page-head{padding:25px 22px}.topbar{height:76px}.welcome-grid{gap:16px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

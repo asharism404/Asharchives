@@ -1,0 +1,20 @@
+/* Asharchives motion layer */
+@keyframes ashUp{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes ashFloat{50%{transform:translateY(-8px)}}
+@keyframes ashPulse{50%{box-shadow:0 0 0 8px rgba(255,210,26,.18)}}
+.topbar{animation:ashUp .5s ease both}
+.hero-card,.daily-card,.page-head,.course-hero,.educator-banner{animation:ashUp .6s cubic-bezier(.2,.8,.2,1) both}
+.daily-card{animation-delay:.1s}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i,0)*45ms)}
+.reveal.in{opacity:1;transform:none}
+.subject-card,.notes-card,.playlist-card,.topic-item,.qb-card{transition:transform .25s ease,box-shadow .25s ease}
+.subject-card:hover{transform:translateY(-6px)}
+.subject-icon{transition:transform .3s ease}.subject-card:hover .subject-icon{transform:scale(1.15) rotate(-6deg)}
+.subject-arrow{transition:transform .25s ease}.subject-card:hover .subject-arrow{transform:translate(3px,-3px)}
+.progress-track span{transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.anatomy-card,.orbit{animation:ashFloat 6s ease-in-out infinite}.orbit-two{animation-delay:-3s}
+.primary-button{animation:ashPulse 3s ease-in-out infinite}
+.week-dot.active{animation:ashUp .4s ease both}
+.dock-tab{transition:transform .2s ease}.dock-tab:active{transform:scale(.9)}
+body>main,.app-shell>main{animation:ashUp .45s ease both}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
