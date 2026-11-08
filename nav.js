@@ -69,7 +69,7 @@
   drawer.className = "drawer"; drawer.id = "drawer"; drawer.setAttribute("aria-label", "Main menu"); drawer.setAttribute("aria-hidden", "true");
   drawer.innerHTML = `
     <div class="drawer-head">
-      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo-256.png" alt="" width="40" height="40"></span><span>Asharchives</span></a>
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Asharchives</span></a>
       <button class="icon-button" id="drawerClose" type="button" aria-label="Close menu">${ICON.close}</button>
     </div>
     <nav class="drawer-nav" aria-label="Sections">
