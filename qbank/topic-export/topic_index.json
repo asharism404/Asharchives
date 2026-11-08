@@ -1,0 +1,1940 @@
+{
+ "anaesthesia": {
+  "subject": "Anaesthesia",
+  "topics": [
+   {
+    "topic": "Perioperative Care and Monitoring",
+    "questions": 149,
+    "chapters": {
+     "History And Ethical Aspects Of Anaesthesia": 10,
+     "Preoperative Evaluation": 23,
+     "Cns And Cvs Monitoring In Anaesthesia": 20,
+     "Respiratory Monitoring In Anaesthesia": 12,
+     "Anaesthetic Implication Of Concurrent Diseases": 31,
+     "Pediatric And Obstetric Anaesthesia": 25,
+     "Complications Of Anaesthesia": 28
+    }
+   },
+   {
+    "topic": "Airway and Equipment",
+    "questions": 82,
+    "chapters": {
+     "Airway Devices": 12,
+     "Intubation": 19,
+     "Breathing Systems": 12,
+     "Anesthesia Workstation": 30,
+     "Ventilation And O2 Delivery Systems": 9
+    }
+   },
+   {
+    "topic": "Resuscitation",
+    "questions": 39,
+    "chapters": {
+     "Bls And Pals": 16,
+     "Acls": 23
+    }
+   },
+   {
+    "topic": "Muscle Relaxants",
+    "questions": 51,
+    "chapters": {
+     "Depolarising Muscle Relaxants": 25,
+     "Non Depolarising Muscle Relaxants": 26
+    }
+   },
+   {
+    "topic": "General Anaesthetic Agents",
+    "questions": 101,
+    "chapters": {
+     "Inhaled Anaesthetics Properties, N2O And Halothane": 25,
+     "Inhaled Anaesthetics Fluorinated Agents, Inert Agents And Therapeutic Gases": 23,
+     "Intravenous Anesthesia Barbiturates, Benzodiazepines & Propofol": 27,
+     "Intravenous Anesthesia Etomidate, Ketamine And Daycare Surgery": 26
+    }
+   },
+   {
+    "topic": "Local and Regional Anaesthesia",
+    "questions": 101,
+    "chapters": {
+     "Local Anaesthetics General Properties": 20,
+     "Local Anesthetics Specific Drugs": 24,
+     "Regional Anesthesia Techniques": 22,
+     "Regional Anesthesia Complications And Contraindications": 23,
+     "Peripheral Nerve Blocks": 12
+    }
+   }
+  ]
+ },
+ "anatomy": {
+  "subject": "Anatomy",
+  "topics": [
+   {
+    "topic": "Embryology",
+    "questions": 175,
+    "chapters": {
+     "Gametogenesis": 18,
+     "Pre Embryonic Phase Of Development": 13,
+     "Embryonic Phase Of Development": 15,
+     "Placenta, Fetal Membranes And Twinning": 14,
+     "Pharyngeal Arches, Skeletal & Muscular Systems": 21,
+     "Cardiovascular And Respiratory Systems": 22,
+     "Alimentary, Hepatobiliary Systems, Pancreas And Spleen": 21,
+     "Face, Nose & Palate, Eye, Ear": 14,
+     "Nervous System And Endocrine Glands": 18,
+     "Urogenital System": 19
+    }
+   },
+   {
+    "topic": "Histology",
+    "questions": 98,
+    "chapters": {
+     "Cell Structure, Epithelia, Glands & Connective Tissue": 23,
+     "Bone, Cartilage & Muscular Tissue": 14,
+     "Nervous And Endocrine Systems": 13,
+     "Cardiovascular, Lymphatic And Respiratory Systems": 11,
+     "Digestive, Hepatobiliary & Genitourinary Systems": 20,
+     "Skin & Special Senses, Eye And Ear": 17
+    }
+   },
+   {
+    "topic": "Neuroanatomy",
+    "questions": 133,
+    "chapters": {
+     "Cranial Nerves": 16,
+     "Meninges And Dural Venous Sinuses": 10,
+     "Ventricular System And Subarachnoid Space": 17,
+     "Cerebrum": 6,
+     "White Matter Of The Brain": 12,
+     "Basal Ganglia And Limbic System": 6,
+     "Diencephalon": 11,
+     "Brainstem": 12,
+     "Cerebellum": 10,
+     "Vascular Supply Of Brain": 19,
+     "Spinal Cord": 14
+    }
+   },
+   {
+    "topic": "Head and Neck",
+    "questions": 116,
+    "chapters": {
+     "Osteology, Scalp And Face": 23,
+     "Deep Fascia And Triangles Of The Neck": 15,
+     "Muscles, Neurovascular Anatomy Of Head & Neck": 19,
+     "Glands Of The Head And Neck": 23,
+     "Tongue And Palate": 12,
+     "Pharynx": 9,
+     "Larynx": 15
+    }
+   },
+   {
+    "topic": "Upper Limb",
+    "questions": 98,
+    "chapters": {
+     "Brachial Plexus And Nerves": 27,
+     "Upper Limb Bones And Joints": 19,
+     "Fossae And Spaces Of The Upper Limb": 14,
+     "Breast": 7,
+     "Muscles Upper Limb": 16,
+     "Vessels Upper Limb": 15
+    }
+   },
+   {
+    "topic": "Thorax",
+    "questions": 106,
+    "chapters": {
+     "General Anatomy Of Thorax": 13,
+     "Thoracic Wall": 20,
+     "Mediastinum": 12,
+     "Diaphragm": 8,
+     "Heart": 30,
+     "Lungs And Pleura": 23
+    }
+   },
+   {
+    "topic": "Abdomen and Pelvis",
+    "questions": 119,
+    "chapters": {
+     "Anterior Abdominal Wall": 11,
+     "Abdominal Cavity And Peritoneum": 10,
+     "Gi Tract": 16,
+     "Hepatobiliary System, Spleen & Pancreas": 20,
+     "Kub & Adrenal Gland": 23,
+     "Internal And External Genitalia": 21,
+     "Pelvis & Perineum": 18
+    }
+   },
+   {
+    "topic": "Lower Limb",
+    "questions": 90,
+    "chapters": {
+     "Bones Of The Lower Limb": 15,
+     "Joints Of The Lower Limb": 18,
+     "Muscles Of The Lower Limb": 20,
+     "Nerves & Vessels Of Lower Limb": 19,
+     "Important Structures Of Lower Limb": 18
+    }
+   },
+   {
+    "topic": "General Anatomy (Revision)",
+    "questions": 88,
+    "chapters": {
+     "Vertebral Column": 12,
+     "Bones, Joints And Cartilage": 27,
+     "Muscles And Tendons": 16,
+     "Cardiovascular, Lymphatic And Nervous Systems": 20,
+     "Skin, Connective Tissue And Ligaments": 13
+    }
+   }
+  ]
+ },
+ "biochemistry": {
+  "subject": "Biochemistry",
+  "topics": [
+   {
+    "topic": "Carbohydrate Metabolism",
+    "questions": 75,
+    "chapters": {
+     "Glycolysis And Gluconeogenesis": 28,
+     "Chemistry Of Carbohydrates, Amino Sugars And Mucopolysaccharides": 21,
+     "Glycogen Metabolism And Glycogen Storage Disorders": 17,
+     "Hmp Shunt Pathway, Fructose , Galactose Metabolism": 9
+    }
+   },
+   {
+    "topic": "Bioenergetics and TCA Cycle",
+    "questions": 35,
+    "chapters": {
+     "Etc And Bioenergetics": 16,
+     "Krebs Cycle": 19
+    }
+   },
+   {
+    "topic": "Amino Acids and Proteins",
+    "questions": 106,
+    "chapters": {
+     "Amino Acids Basics": 22,
+     "Amino Acid Metabolism": 22,
+     "Amino Acid Metabolic Disorder": 21,
+     "Protein Structure And Function": 28,
+     "Urea Cycle And Its Disorders": 13
+    }
+   },
+   {
+    "topic": "Lipid Metabolism",
+    "questions": 98,
+    "chapters": {
+     "Lipids Basics": 14,
+     "Fatty Acid Oxidation And Ketogenesis": 18,
+     "Biosynthesis Of Fatty Acids And Eicosanoids": 22,
+     "Metabolism Of Acylglycerols And Sphingolipids": 24,
+     "Cholesterol Synthesis, Transport And Excretion": 20
+    }
+   },
+   {
+    "topic": "Heme and Bile Pigments",
+    "questions": 22,
+    "chapters": {
+     "Porphyrins And Bile Pigments": 22
+    }
+   },
+   {
+    "topic": "Enzymes",
+    "questions": 33,
+    "chapters": {
+     "Enzymes Mechanism Of Action & Clinical Importance": 19,
+     "Enzyme Kinetics And Regulation Of Activity": 14
+    }
+   },
+   {
+    "topic": "Vitamins and Minerals",
+    "questions": 57,
+    "chapters": {
+     "Energy Releasing Vitamins": 17,
+     "Fat Soluble Vitamins": 16,
+     "Hematopoietic And Other Vitamins": 10,
+     "Antioxidants & Minerals": 14
+    }
+   },
+   {
+    "topic": "Molecular Biology and Genetics",
+    "questions": 85,
+    "chapters": {
+     "Basics Of Genetics Nucleotide Metabolism And Its Disorders": 17,
+     "Dna Organization, Replication And Repair": 20,
+     "Rna Synthesis, Processing And Modification": 17,
+     "Regulation Of Gene Expression": 10,
+     "Molecular Genetics, Recombinant Dna & Genomic Technology": 21
+    }
+   }
+  ]
+ },
+ "community-medicine": {
+  "subject": "Community Medicine",
+  "topics": [
+   {
+    "topic": "Health, Disease and Society",
+    "questions": 167,
+    "chapters": {
+     "History Of Medicine": 25,
+     "Health Determinants And Indicators": 21,
+     "Concepts Of Disease And Prevention": 26,
+     "Concepts Of Sociology And Psychology": 20,
+     "Social Organization And Economics": 23,
+     "International Health": 25,
+     "Mental Health": 14,
+     "Genetics And Health": 13
+    }
+   },
+   {
+    "topic": "Epidemiology",
+    "questions": 146,
+    "chapters": {
+     "Principles Of Epidemiology": 28,
+     "Descriptive Epidemiology": 17,
+     "Analytical Epidemiology": 28,
+     "Experimental Epidemiology": 18,
+     "Basic Definitions In Infectious Disease Epidemiology": 13,
+     "Dynamics Of Disease Transmission": 17,
+     "Screening": 25
+    }
+   },
+   {
+    "topic": "Immunization and Disinfection",
+    "questions": 60,
+    "chapters": {
+     "Principles Of Immunization And Vaccination": 22,
+     "Vaccine Production And Storage": 16,
+     "Sterilization And Disinfection": 22
+    }
+   },
+   {
+    "topic": "Communicable Diseases",
+    "questions": 135,
+    "chapters": {
+     "Viral Respiratory Infections": 14,
+     "Bacterial Respiratory Infections": 17,
+     "Intestinal Infections": 30,
+     "Arthropod Borne Infections": 20,
+     "Zoonotic Infections Viral": 16,
+     "Zoonotic Infections Bacterial & Parasitic": 10,
+     "Stds And Surface Infections": 28
+    }
+   },
+   {
+    "topic": "Non-communicable Diseases",
+    "questions": 37,
+    "chapters": {
+     "Non Communicable Diseases Cardiovascular Diseases And Diabetes": 20,
+     "Non Communicable Diseases Cancer, Obesity And Blindness": 17
+    }
+   },
+   {
+    "topic": "National Health Programmes",
+    "questions": 66,
+    "chapters": {
+     "National Health Programmes I Nvbdcp": 17,
+     "National Health Programmes Ii Nlep, Ntep & Naco": 20,
+     "National Health Programmes Iii Nis, Jsy, Rbsk And Others": 29
+    }
+   },
+   {
+    "topic": "Demography, Family Planning and MCH",
+    "questions": 83,
+    "chapters": {
+     "Demography I Demographic Cycle, Annual Growth Rate And Age Pyramid": 16,
+     "Demography Ii Demographic Indicators": 21,
+     "Family Planning": 20,
+     "Preventive Obstetrics, Pediatrics And Geriatrics": 26
+    }
+   },
+   {
+    "topic": "Nutrition",
+    "questions": 36,
+    "chapters": {
+     "Energy Metabolism And Macronutrients": 13,
+     "Micronutrients And Water": 14,
+     "Food Quality And Processing": 9
+    }
+   },
+   {
+    "topic": "Environment and Occupational Health",
+    "questions": 264,
+    "chapters": {
+     "Water I Sources And Purification Of Water": 28,
+     "Water Ii Disinfection Of Water": 14,
+     "Water Iii Water Quality And Standards": 21,
+     "Environmental Meteorology": 23,
+     "Housing And Ventilation": 14,
+     "Light, Sound And Radiation": 19,
+     "Waste And Sewage Disposal": 21,
+     "Medical Entomology Mosquitoes And Flies": 21,
+     "Medical Entomology Ticks, Fleas And Mites": 19,
+     "Methods Of Pest Control": 19,
+     "Biomedical Waste Management": 20,
+     "Disaster Management": 18,
+     "Occupational Health Diseases": 15,
+     "Esi And Factories Act": 12
+    }
+   },
+   {
+    "topic": "Health Management and Education",
+    "questions": 72,
+    "chapters": {
+     "Communication For Health Education": 20,
+     "Health Planning And Management": 17,
+     "Healthcare In India": 24,
+     "Healthcare In India Iphs 2022 Update": 11
+    }
+   },
+   {
+    "topic": "Biostatistics and Research",
+    "questions": 146,
+    "chapters": {
+     "Descriptive Statistics I Probability And Data": 22,
+     "Descriptive Statistics Ii Measures Of Location": 16,
+     "Descriptive Statistics Iii Measures Of Dispersion": 23,
+     "Descriptive Statistics Iv Measures Of Position": 11,
+     "Inferential Statistics": 13,
+     "Concepts In Hypothesis Testing": 11,
+     "Tests Of Significance": 15,
+     "Correlational And Predictive Techniques": 19,
+     "Facets Of Clinical Research And Biostatistics": 16
+    }
+   }
+  ]
+ },
+ "dermatology": {
+  "subject": "Dermatology",
+  "topics": [
+   {
+    "topic": "Basics and Investigations",
+    "questions": 61,
+    "chapters": {
+     "Anatomy & Physiology Of Skin": 24,
+     "Dermatopathology Of Skin Lesions": 12,
+     "Morphology And Investigations Of Skin Lesions": 25
+    }
+   },
+   {
+    "topic": "Acne, Hair, Nails and Pigmentation",
+    "questions": 75,
+    "chapters": {
+     "Acne, Rosacea And Others": 20,
+     "Disorders Of Hair And Nails": 28,
+     "Disorders Of Skin Pigmentation": 27
+    }
+   },
+   {
+    "topic": "Inflammatory and Reactive Dermatoses",
+    "questions": 108,
+    "chapters": {
+     "Dermatitis": 22,
+     "Urticaria & Angioedema": 13,
+     "Reactive Skin Diseases And Drug Eruptions": 11,
+     "Papulosquamous Disorders": 14,
+     "Psoriasis": 19,
+     "Vesiculobullous Diseases": 29
+    }
+   },
+   {
+    "topic": "Skin Infections and Infestations",
+    "questions": 110,
+    "chapters": {
+     "Mycobacterial Infections": 30,
+     "Bacterial Infections": 20,
+     "Viral Infections": 16,
+     "Fungal And Protozoal Infections": 27,
+     "Arthropod And Parasitic Infections": 17
+    }
+   },
+   {
+    "topic": "Sexually Transmitted Diseases",
+    "questions": 36,
+    "chapters": {
+     "Syphilis": 16,
+     "Non Syphilitic Sexually Transmitted Diseases": 20
+    }
+   },
+   {
+    "topic": "Systemic, Genetic and Neoplastic Skin Disease",
+    "questions": 89,
+    "chapters": {
+     "Genodermatoses & Nutritional Disorders": 21,
+     "Connective Tissue Disorders": 21,
+     "Skin Malignancies": 24,
+     "Systemic Diseases And Skin": 23
+    }
+   }
+  ]
+ },
+ "ent": {
+  "subject": "ENT",
+  "topics": [
+   {
+    "topic": "Ear: Anatomy and Embryology",
+    "questions": 93,
+    "chapters": {
+     "Embryology Of Ear And Malformations": 14,
+     "Anatomy Of External Ear": 21,
+     "Anatomy Of Middle Ear": 27,
+     "Anatomy Of Mastoid": 10,
+     "Anatomy Of Inner Ear": 21
+    }
+   },
+   {
+    "topic": "Ear: Diseases and Tumours",
+    "questions": 152,
+    "chapters": {
+     "Disorders Of External Ear": 28,
+     "Disorders Of Middle Ear": 20,
+     "Cholesteatoma And Types Of Csom": 18,
+     "Csom Treatment And Complications": 17,
+     "Otosclerosis": 24,
+     "Meniere’S Disease": 18,
+     "Tumors Of Ear": 27
+    }
+   },
+   {
+    "topic": "Hearing Tests and Facial Nerve",
+    "questions": 92,
+    "chapters": {
+     "Anatomy Of Facial Nerve": 18,
+     "Facial Nerve Disorders": 23,
+     "Eustachian Tube": 15,
+     "Physiology Of Hearing And Tuning Fork Tests": 20,
+     "Audiometric Tests And Special Tests Of Hearing": 16
+    }
+   },
+   {
+    "topic": "Nose and Sinuses: Anatomy and Physiology",
+    "questions": 42,
+    "chapters": {
+     "Anatomy Of Nose": 18,
+     "Anatomy Of Paranasal Sinuses": 12,
+     "Physiology Of Nose And Paranasal Sinuses": 12
+    }
+   },
+   {
+    "topic": "Nose and Sinuses: Diseases",
+    "questions": 136,
+    "chapters": {
+     "Epistaxis": 13,
+     "Congenital Anomalies Of Nose And Disease Of Nose": 18,
+     "Rhinitis": 17,
+     "Disorder Of Nasal Septum And Nasal Polyposis": 19,
+     "Trauma Of Nose And Face": 22,
+     "Tumors Of Nose And Pns": 18,
+     "Sinusitis And Its Complication": 29
+    }
+   },
+   {
+    "topic": "Pharynx",
+    "questions": 87,
+    "chapters": {
+     "Anatomy And Physiology Of Pharynx": 13,
+     "Adenoids": 11,
+     "Tonsils": 21,
+     "Abscesses Of Pharynx": 18,
+     "Nasopharyngeal Angiofibroma": 11,
+     "Nasopharyngeal Carcinoma": 13
+    }
+   },
+   {
+    "topic": "Larynx",
+    "questions": 63,
+    "chapters": {
+     "Anatomy And Physiology Of Larynx": 21,
+     "Stridor And Congenital Conditions Of Larynx": 9,
+     "Voice And Speech Disorders": 21,
+     "Laryngeal Carcinoma": 12
+    }
+   },
+   {
+    "topic": "Instruments",
+    "questions": 9,
+    "chapters": {
+     "Instruments": 9
+    }
+   }
+  ]
+ },
+ "forensic-medicine": {
+  "subject": "Forensic Medicine",
+  "topics": [
+   {
+    "topic": "Identification",
+    "questions": 42,
+    "chapters": {
+     "Skeletal And Dental Age Determination": 15,
+     "Race, Sex And Stature Determination": 16,
+     "Fingerprint And Tattoos": 11
+    }
+   },
+   {
+    "topic": "Medicolegal Basics and Autopsy",
+    "questions": 59,
+    "chapters": {
+     "Bns, Bnss, And Bsa": 21,
+     "Death And Post Mortem Changes": 26,
+     "Medico Legal Autopsy": 12
+    }
+   },
+   {
+    "topic": "Injuries",
+    "questions": 95,
+    "chapters": {
+     "Mechanical Injuries": 19,
+     "Regional Injuries": 26,
+     "Thermal Injuries": 23,
+     "Firearm Injuries And Blast Injuries": 27
+    }
+   },
+   {
+    "topic": "Asphyxia and Drowning",
+    "questions": 35,
+    "chapters": {
+     "Mechanical Asphyxia": 23,
+     "Drowning": 12
+    }
+   },
+   {
+    "topic": "Sexual Offences, Abortion and Child Abuse",
+    "questions": 28,
+    "chapters": {
+     "Sexual Offences And Abortion": 16,
+     "Childhood Violence, Infanticide And Starvation": 12
+    }
+   },
+   {
+    "topic": "Toxicology",
+    "questions": 131,
+    "chapters": {
+     "Poisoning General Considerations": 23,
+     "Organophosphorus Poisoning": 14,
+     "Corrosives And Asphyxiants": 22,
+     "Alcohol Poisoning": 15,
+     "Inorganic Irritants Metallic And Non Metallic": 20,
+     "Organic Irritants Plant And Animal Poisons": 20,
+     "Cns Narcotics And Deliriants": 17
+    }
+   }
+  ]
+ },
+ "general-medicine": {
+  "subject": "General Medicine",
+  "topics": [
+   {
+    "topic": "Clinical Examination and Acid-Base",
+    "questions": 34,
+    "chapters": {
+     "Clinical Examination": 16,
+     "Acid Base Disorders": 18
+    }
+   },
+   {
+    "topic": "Endocrinology",
+    "questions": 242,
+    "chapters": {
+     "General Principles Of Endocrinology": 13,
+     "Disorders Of Anterior Pituitary": 14,
+     "Pituitary Tumours And Sheehan'S Syndrome": 11,
+     "Posterior Pituitary Adh, Oxytocin & Diabetes Insipidus": 13,
+     "Syndrome Of Inappropriate Anti Diuretic Hormone Secretion (Siadh)": 9,
+     "Thyroid Disorders Clinical Features": 19,
+     "Thyroid Disorders Management": 10,
+     "Multiple Endocrine Neoplasia": 13,
+     "Pheochromocytoma": 14,
+     "Cushing'S Syndrome": 16,
+     "Adrenal Insufficiency And Hyperaldosteronism": 15,
+     "Diabetes Mellitus Types, Clinical Features And Management": 22,
+     "Diabetes Mellitus Complications And Their Management": 27,
+     "Reproductive Endocrinology": 14,
+     "Disorders Of Parathyroid And Calcium Homeostasis": 20,
+     "Obesity": 12
+    }
+   },
+   {
+    "topic": "Gastroenterology and Hepatology",
+    "questions": 242,
+    "chapters": {
+     "Hyperbilirubinemias And Tests Of Liver Function": 21,
+     "Alcoholic Liver Diseases And Non Alcoholic Fatty Liver Disease": 12,
+     "Viral Hepatitis": 24,
+     "Autoimmune Disorders Of Hepatobiliary System": 12,
+     "Acute Liver Failure And Liver Transplantation": 19,
+     "Hemochromatosis And Wilson'S Disease": 15,
+     "Cirrhosis And Complications": 21,
+     "Peptic Ulcer Disease And Related Disorders": 21,
+     "Evaluation Of Diarrhea": 11,
+     "Irritable Bowel Syndrome": 15,
+     "Inflammatory Bowel Disease Clinical Features And Diagnosis": 18,
+     "Inflammatory Bowel Disease Complications And Treatment": 18,
+     "Malabsorption Syndromes": 23,
+     "Other Gastrointestinal Conditions": 12
+    }
+   },
+   {
+    "topic": "Rheumatology",
+    "questions": 135,
+    "chapters": {
+     "Large And Medium Vessel Vasculitis": 15,
+     "Small Vessel Vasculitis": 12,
+     "Crystal Arthropathies": 10,
+     "Sjogren'S Syndrome And Scleroderma": 16,
+     "Sarcoidosis": 14,
+     "Dermatomyositis And Related Disorders": 16,
+     "Seronegative Spondyloarthritides": 17,
+     "Sle And Aps": 20,
+     "Rheumatoid Arthritis": 15
+    }
+   },
+   {
+    "topic": "Respiratory Medicine",
+    "questions": 109,
+    "chapters": {
+     "Asthma & Copd": 23,
+     "Pneumonia": 15,
+     "Interstitial Lung Diseases And Pneumoconiosis": 20,
+     "Bronchiectasis And Lung Abscess": 16,
+     "Pulmonary Function Tests": 9,
+     "Respiratory Failure And Ards": 6,
+     "Neoplasms Of The Lung": 13,
+     "Sleep Apnea": 7
+    }
+   },
+   {
+    "topic": "Nephrology",
+    "questions": 117,
+    "chapters": {
+     "Urine Analysis": 14,
+     "Chronic Kidney Disease": 25,
+     "Acute Kidney Injury": 16,
+     "Renal Replacement Therapy": 24,
+     "Cystic And Inherited Disorders Of The Kidney": 14,
+     "Renal Tubular Disorders": 14,
+     "Vascular Diseases Of Kidney": 10
+    }
+   },
+   {
+    "topic": "Cardiology",
+    "questions": 255,
+    "chapters": {
+     "Diagnosis Of Cardiovascular Disorders": 25,
+     "Ecg Basics": 19,
+     "Supraventricular Arrhythmias": 18,
+     "Ventricular Arrhythmias And Heart Blocks": 17,
+     "Valvular Heart Diseases": 21,
+     "Infective Endocarditis And Acute Rheumatic Fever": 27,
+     "Hypertensive Vascular Disease": 13,
+     "Ischemic Heart Disease Presentation And Diagnosis": 22,
+     "Ischemic Heart Disease Complications And Management": 21,
+     "Cardiomyopathy And Myocarditis": 13,
+     "Heart Failure": 14,
+     "Pericardial Diseases": 10,
+     "Pulmonary Hypertension": 7,
+     "Diseases Of Aorta And Peripheral Arteries": 11,
+     "Dvt And Pulmonary Embolism": 17
+    }
+   },
+   {
+    "topic": "Neurology",
+    "questions": 262,
+    "chapters": {
+     "General Neurology, Brain Death, And Gcs": 16,
+     "Seizures And Epilepsy": 27,
+     "Ischemic Stroke": 22,
+     "Brainstem Syndromes And Hemorrhagic Stroke": 23,
+     "Peripheral Neuropathy": 14,
+     "Guillain Barre Syndrome And Other Immune Mediated Neuropathies": 20,
+     "Diseases Of The Spinal Cord": 16,
+     "Myasthenia Gravis And Other Neuromuscular Junction Disorders": 15,
+     "Multiple Sclerosis & Other Demyelinating Disorders": 15,
+     "Headache Disorders": 19,
+     "Movement Disorders": 30,
+     "Als And Other Motor Neuron Diseases": 11,
+     "Ataxic Disorders": 8,
+     "Cranial Nerve Disorders": 17,
+     "Infections Of The Nervous System": 9
+    }
+   },
+   {
+    "topic": "Haematology",
+    "questions": 231,
+    "chapters": {
+     "Hypoproliferative Anemia": 20,
+     "Macrocytic Anemia": 17,
+     "Hemolytic Anemia": 22,
+     "Myeloproliferative Disorders And Aplastic Anemia": 16,
+     "Platelet Disorders": 29,
+     "Acute Leukemia": 22,
+     "Plasma Cell Disorders": 18,
+     "Chronic Myeloid Leukemia And Chronic Lymphoid Leukemia": 14,
+     "Lymphomas": 28,
+     "Coagulation Disorders": 23,
+     "Haemoglobinopathies": 8,
+     "Blood Bank & Transfusion Medicine": 14
+    }
+   },
+   {
+    "topic": "HIV and COVID-19",
+    "questions": 85,
+    "chapters": {
+     "Hiv Aids Epidemiology And Clinical Features": 15,
+     "Hiv Aids Management And Prophylaxis": 18,
+     "Covid 19 Epidemiology And Clinical Features": 12,
+     "Covid 19 Investigations": 13,
+     "Covid 19 Treatment": 13,
+     "Covid 19 Prophylaxis And Complications": 14
+    }
+   }
+  ]
+ },
+ "general-surgery": {
+  "subject": "General Surgery",
+  "topics": [
+   {
+    "topic": "Fluids, Shock and Instruments",
+    "questions": 62,
+    "chapters": {
+     "Fluids, Electrolytes & Nutrition": 21,
+     "Shock And Blood Transfusion": 15,
+     "Instruments & Sutures": 26
+    }
+   },
+   {
+    "topic": "Trauma and Burns",
+    "questions": 84,
+    "chapters": {
+     "Trauma Scores, Investigations And Assessment": 16,
+     "Trauma Spinal, Thoracic And Abdominal Injuries": 24,
+     "Head Injury": 21,
+     "Burns": 23
+    }
+   },
+   {
+    "topic": "Wound Healing and Plastic Surgery",
+    "questions": 63,
+    "chapters": {
+     "Wound Healing, Tissue Repair & Scar": 21,
+     "Reconstructive Surgery": 16,
+     "Skin Malignancies": 26
+    }
+   },
+   {
+    "topic": "Breast",
+    "questions": 94,
+    "chapters": {
+     "Breast Anatomy, Congenital And Benign Diseases": 22,
+     "Carcinoma Breast Risk Factors And Types": 15,
+     "Investigations In Breast Diseases": 19,
+     "Carcinoma Breast Staging, Prognosis & Molecular Types": 11,
+     "Carcinoma Breast Treatment": 27
+    }
+   },
+   {
+    "topic": "Endocrine Surgery",
+    "questions": 94,
+    "chapters": {
+     "Benign Lesions Of Thyroid": 17,
+     "Thyroid Malignancies": 27,
+     "The Parathyroids": 20,
+     "The Adrenals": 15,
+     "Endocrine Pancreas": 15
+    }
+   },
+   {
+    "topic": "Upper GI and Bariatric Surgery",
+    "questions": 101,
+    "chapters": {
+     "Esophagus Congenital, Motility & Inflammatory Disorders": 23,
+     "Esophagus Gerd & Carcinoma": 18,
+     "Stomach And Duodenum": 26,
+     "Carcinoma Stomach": 20,
+     "Metabolic & Bariatric Surgery": 14
+    }
+   },
+   {
+    "topic": "Small Bowel, Colon, Anorectum and Hernia",
+    "questions": 180,
+    "chapters": {
+     "Small Intestine": 28,
+     "Large Intestine": 25,
+     "Appendix": 22,
+     "Polyps And Colorectal Carcinoma": 35,
+     "Rectum": 20,
+     "Anus And Anal Canal": 23,
+     "Hernia": 27
+    }
+   },
+   {
+    "topic": "Liver, Biliary Tract, Spleen and Pancreas",
+    "questions": 184,
+    "chapters": {
+     "Benign Conditions Of Liver": 30,
+     "Benign Tumors Of Liver": 13,
+     "Malignant Tumors Of Liver": 20,
+     "Gall Bladder": 28,
+     "Bile Duct": 11,
+     "Spleen": 17,
+     "Congenital Anomalies And Acute Pancreatitis": 22,
+     "Chronic Pancreatitis": 22,
+     "Carcinoma Pancreas": 21
+    }
+   },
+   {
+    "topic": "Urology",
+    "questions": 123,
+    "chapters": {
+     "Congenital Diseases Of Kidney And Urinary Calculi": 22,
+     "Infections And Tumors Of Kidney": 24,
+     "Urinary Bladder And Ureters": 22,
+     "Prostate": 20,
+     "Urethra And Penis": 15,
+     "Testes And Scrotum": 20
+    }
+   },
+   {
+    "topic": "Oral Cavity, Thorax and Paediatric Surgery",
+    "questions": 70,
+    "chapters": {
+     "Paediatric Surgery": 19,
+     "Oral Cavity & Salivary Glands": 25,
+     "Thorax & Lungs": 26
+    }
+   },
+   {
+    "topic": "Vascular and Lymphatic Surgery",
+    "questions": 70,
+    "chapters": {
+     "Ischemic Arterial Diseases": 22,
+     "Arterial Aneurysms, Dissections And Malformations": 15,
+     "Venous Diseases": 23,
+     "Lymphatic Diseases": 10
+    }
+   }
+  ]
+ },
+ "microbiology": {
+  "subject": "Microbiology",
+  "topics": [
+   {
+    "topic": "General and Applied Microbiology",
+    "questions": 27,
+    "chapters": {
+     "General Microbiology": 17,
+     "Applied Microbiology": 10
+    }
+   },
+   {
+    "topic": "Immunology",
+    "questions": 59,
+    "chapters": {
+     "Components Of Immune System": 20,
+     "Structure And Functions Of The Immune System & Immune Response": 16,
+     "Hypersensitivity": 13,
+     "Immune Disorders": 10
+    }
+   },
+   {
+    "topic": "Gram-positive Bacteria and Mycobacteria",
+    "questions": 89,
+    "chapters": {
+     "Corynebacterium, Listeria And Actinomyces": 17,
+     "Streptococci And Enterococci": 19,
+     "Staphylococci": 11,
+     "Clostridium And Bacillus": 19,
+     "Mycobacteria Tuberculosis": 11,
+     "Other Mycobacteria": 12
+    }
+   },
+   {
+    "topic": "Gram-negative Bacteria",
+    "questions": 105,
+    "chapters": {
+     "Escherichia, Proteus And Klebsiella": 14,
+     "Shigella And Salmonella": 13,
+     "Vibrio And Campylobacterales": 21,
+     "Pseudomonas And Burkholderiales": 13,
+     "Haemophilus": 9,
+     "Miscellaneous Bacteria Yersinia, Brucella, Bartonella, Legionella": 20,
+     "Gram Negative Cocci": 15
+    }
+   },
+   {
+    "topic": "Rickettsia, Chlamydia and Spirochetes",
+    "questions": 37,
+    "chapters": {
+     "Rickettsia, Chlamydia And Mycoplasma": 19,
+     "Spirochetes": 18
+    }
+   },
+   {
+    "topic": "Virology",
+    "questions": 112,
+    "chapters": {
+     "General Properties Of Viruses": 15,
+     "Dna Viruses": 20,
+     "Hepatitis": 19,
+     "Hiv": 11,
+     "Myxoviruses And Rhabdoviruses": 15,
+     "Arboviruses And Picorna Viruses": 17,
+     "Miscellaneous Viruses Rubella, Coronaviruses, Prions, Rotavirus, Filovirus, Zika Virus And Nipah Virus": 15
+    }
+   },
+   {
+    "topic": "Mycology",
+    "questions": 24,
+    "chapters": {
+     "Superficial And Systemic Mycoses": 18,
+     "Opportunistic Mycoses": 6
+    }
+   },
+   {
+    "topic": "Parasitology",
+    "questions": 82,
+    "chapters": {
+     "Protozoology Sporozoa": 13,
+     "General Parasitology": 16,
+     "Protozoology Amoebae, Ciliates & Flagellates": 22,
+     "Helminthology Cestodes & Trematodes": 12,
+     "Helminthology Nematodes": 19
+    }
+   }
+  ]
+ },
+ "obgyn": {
+  "subject": "Obstetrics and Gynaecology",
+  "topics": [
+   {
+    "topic": "Anatomy, Physiology and Development",
+    "questions": 100,
+    "chapters": {
+     "Anatomy Of Female Pelvic Organs": 25,
+     "The Physiology Of Conception": 14,
+     "Maternal Pelvis And Fetal Skull": 16,
+     "Placenta And Fetal Membranes": 23,
+     "Sexual Development, Puberty And Adolescence": 22
+    }
+   },
+   {
+    "topic": "Antenatal Care",
+    "questions": 62,
+    "chapters": {
+     "Physiological Changes During Pregnancy": 21,
+     "Diagnosis Of Pregnancy And Antenatal Care": 15,
+     "Antenatal Investigations": 11,
+     "Obstetrical Imaging": 15
+    }
+   },
+   {
+    "topic": "Labour, Delivery and Puerperium",
+    "questions": 133,
+    "chapters": {
+     "Normal Labour": 24,
+     "Abnormal Labour": 18,
+     "Induction And Augmentation Of Labour": 16,
+     "Malpresentations": 22,
+     "Operative Vaginal Delivery": 15,
+     "Caesarean Section And Vaginal Birth After Caesarean (Vbac)": 17,
+     "Puerperium": 21
+    }
+   },
+   {
+    "topic": "Obstetric Complications",
+    "questions": 150,
+    "chapters": {
+     "Multifetal Pregnancy": 22,
+     "Ectopic Pregnancy": 19,
+     "Abortion And Medical Termination Of Pregnancy": 24,
+     "Antepartum Hemorrhage": 23,
+     "Postpartum Haemorrhage": 20,
+     "Preterm Labor And Postterm Pregnancy": 24,
+     "Gestational Trophoblastic Diseases": 18
+    }
+   },
+   {
+    "topic": "Medical Disorders in Pregnancy",
+    "questions": 117,
+    "chapters": {
+     "Anemia In Pregnancy": 16,
+     "Hypertensive Disorders In Pregnancy": 28,
+     "Diabetes In Pregnancy": 16,
+     "Cardiovascular Conditions In Pregnancy": 20,
+     "Rhesus Isoimmunization": 14,
+     "Hepatic Disorders And Infections In Pregnancy": 23
+    }
+   },
+   {
+    "topic": "Benign Gynaecology",
+    "questions": 115,
+    "chapters": {
+     "Disorders Of Menstruation": 18,
+     "Uro Gynecology": 22,
+     "Prolapse": 21,
+     "Fibroid": 24,
+     "Endometriosis And Adenomyosis": 17,
+     "Disorders Of Ovary": 13
+    }
+   },
+   {
+    "topic": "Contraception, Infections, Infertility and Menopause",
+    "questions": 125,
+    "chapters": {
+     "Contraception And Sterilization": 24,
+     "Vaginal Infections": 22,
+     "Vulval Infections": 11,
+     "Pelvic Inflammatory Disease": 23,
+     "Genital Tuberculosis": 8,
+     "Infertility": 22,
+     "Perimenopause, Menopause And Post Menopausal Bleeding": 15
+    }
+   },
+   {
+    "topic": "Gynaecological Oncology",
+    "questions": 76,
+    "chapters": {
+     "Ovarian Tumors": 25,
+     "Vulval & Vaginal Malignancy": 13,
+     "Carcinoma Cervix": 23,
+     "Carcinoma Endometrium": 15
+    }
+   },
+   {
+    "topic": "Instruments",
+    "questions": 21,
+    "chapters": {
+     "Instruments": 21
+    }
+   }
+  ]
+ },
+ "ophthalmology": {
+  "subject": "Ophthalmology",
+  "topics": [
+   {
+    "topic": "Anatomy, Optics and Refractive Errors",
+    "questions": 91,
+    "chapters": {
+     "Anatomy And Development Of Eye": 23,
+     "Elementary Optics And Physiology Of Vision": 30,
+     "Myopia And Hypermetropia": 20,
+     "Astigmatism And Errors Of Accomodation": 18
+    }
+   },
+   {
+    "topic": "Conjunctiva, Sclera and Cornea",
+    "questions": 87,
+    "chapters": {
+     "Conjunctiva": 25,
+     "Sclera": 14,
+     "Basics Of Cornea And Infectious Keratitis": 22,
+     "Non Infectious Disorders Of Cornea": 26
+    }
+   },
+   {
+    "topic": "Lens and Glaucoma",
+    "questions": 73,
+    "chapters": {
+     "Lens Introduction, Types Of Cataract And Clinical Features": 23,
+     "Lens Cataract Surgery, Complications And Iols": 20,
+     "Glaucoma": 30
+    }
+   },
+   {
+    "topic": "Uveal Tract",
+    "questions": 33,
+    "chapters": {
+     "Uveitis Anterior And Intermediate": 18,
+     "Uveitis Posterior And Panuveitis": 15
+    }
+   },
+   {
+    "topic": "Retina and Vitreous",
+    "questions": 55,
+    "chapters": {
+     "Retinal Vascular Disorders And Retinal Detachment": 27,
+     "Macular Disorders, Retinal Dystrophies, And Vitreal Disorders": 28
+    }
+   },
+   {
+    "topic": "Eyelids, Lacrimal System, Orbit and Tumours",
+    "questions": 85,
+    "chapters": {
+     "Disorders Of The Eyelid": 20,
+     "Disorders Of Lacrimal Apparatus And Glands Of The Eye": 17,
+     "Orbit Anatomy And Ocular Injuries": 12,
+     "Diseases Of The Orbit": 20,
+     "Tumors Of Eye": 16
+    }
+   },
+   {
+    "topic": "Strabismus and Neuro-ophthalmology",
+    "questions": 86,
+    "chapters": {
+     "Strabismus Introduction, Symptomatology, And Evaluation": 18,
+     "Strabismus Types And Treatment": 22,
+     "Disorders Of Visual Pathway And Pupillary Reflexes": 21,
+     "Disorders Of Optic Nerve And Gaze Palsies": 25
+    }
+   },
+   {
+    "topic": "Clinical, Community Ophthalmology and Instruments",
+    "questions": 66,
+    "chapters": {
+     "Practical Ophthalmology": 21,
+     "Eye Signs In Systemic Disease": 14,
+     "Community Ophthalmology": 11,
+     "Instruments In Ophthalmology": 20
+    }
+   }
+  ]
+ },
+ "orthopaedics": {
+  "subject": "Orthopaedics",
+  "topics": [
+   {
+    "topic": "Fracture Principles",
+    "questions": 42,
+    "chapters": {
+     "Basics Of Fracture And Its Management": 17,
+     "Complications Of Fracture": 14,
+     "Fractures In Children": 11
+    }
+   },
+   {
+    "topic": "Upper Limb",
+    "questions": 54,
+    "chapters": {
+     "Injuries Of Clavicle, Shoulder And Arm": 18,
+     "Injuries Of Elbow And Forearm": 16,
+     "Injuries Of Hand": 10,
+     "Regional Conditions Of The Upper Limb": 10
+    }
+   },
+   {
+    "topic": "Lower Limb and Pelvis",
+    "questions": 65,
+    "chapters": {
+     "Dislocations Of The Hip Joint": 9,
+     "Fractures Of Femur": 20,
+     "Injuries Of Knee, Leg And Foot": 15,
+     "Avn And Regional Conditions Of Lower Limb": 12,
+     "Injuries Of Pelvis": 9
+    }
+   },
+   {
+    "topic": "Spine",
+    "questions": 58,
+    "chapters": {
+     "Regional Conditions Of Neck": 11,
+     "Injuries Of Spine": 23,
+     "Regional Conditions Of Spine": 10,
+     "Spondylolisthesis & Ivdp": 14
+    }
+   },
+   {
+    "topic": "Bone Infections and Tumours",
+    "questions": 80,
+    "chapters": {
+     "Infections Of The Bone": 16,
+     "Skeletal Tuberculosis": 13,
+     "Benign Tumors Of Bone": 25,
+     "Malignant Tumors Of Bone": 26
+    }
+   },
+   {
+    "topic": "Paediatric Orthopaedics",
+    "questions": 42,
+    "chapters": {
+     "Ctev, Genu Varum And Valgum": 13,
+     "Congenital Malformations, Perthes Disease And Scfe": 19,
+     "Metabolic Bone Diseases In Children": 10
+    }
+   },
+   {
+    "topic": "Metabolic Bone Disease and Arthritis",
+    "questions": 51,
+    "chapters": {
+     "Osteoporosis And Osteomalacia": 11,
+     "Paget'S Disease And Hyperparathyroidism": 17,
+     "Rheumatoid Arthritis And Osteoarthritis": 11,
+     "Spondyloarthropathies And Crystal Arthropathies": 12
+    }
+   },
+   {
+    "topic": "Nerve Injuries, Implants and Sports Injury",
+    "questions": 54,
+    "chapters": {
+     "Nerve Injuries": 18,
+     "Implants, Splints And Traction": 9,
+     "Trauma Amputations, Prosthetics And Joint Replacement Surgery": 17,
+     "Sports Injury": 10
+    }
+   }
+  ]
+ },
+ "paediatrics": {
+  "subject": "Paediatrics",
+  "topics": [
+   {
+    "topic": "Neonatology",
+    "questions": 82,
+    "chapters": {
+     "Basics Of Neonatology And Routine Newborn Care": 16,
+     "Disorders Of Newborn": 18,
+     "Diseases In Neonates Requiring Special Care": 17,
+     "Apgar Score And Neonatal Resuscitation": 11,
+     "Neonatal Respiratory Disorders": 20
+    }
+   },
+   {
+    "topic": "Growth, Development and Nutrition",
+    "questions": 118,
+    "chapters": {
+     "Developmental Milestones": 19,
+     "Facets Of Growth And Development": 17,
+     "Nutrition And Breastfeeding": 19,
+     "Protein Energy Malnutrition": 12,
+     "Deficiency Of Fat Soluble Vitamins": 20,
+     "Deficiency Of Water Soluble Vitamins & Trace Elements": 15,
+     "Fluid And Electrolyte Disorders": 16
+    }
+   },
+   {
+    "topic": "Genetic and Metabolic Disorders",
+    "questions": 93,
+    "chapters": {
+     "Mendelian And Non Mendelian Disorders": 23,
+     "Chromosomal Disorders": 22,
+     "Metabolic Disorders Of Amino Acids": 26,
+     "Metabolic Disorders Of Urea Cycle, Complex Molecules, And Carbohydrates": 22
+    }
+   },
+   {
+    "topic": "Infections",
+    "questions": 65,
+    "chapters": {
+     "Polio And Aids": 20,
+     "Pediatric Bacterial And Parasitic Infections": 23,
+     "Measles, Mumps, Rubella And Other Viral Infections": 22
+    }
+   },
+   {
+    "topic": "Gastrointestinal and Liver",
+    "questions": 53,
+    "chapters": {
+     "Surgical Gi Disorders": 20,
+     "Medical Gi Disorders": 15,
+     "Disorders Of The Liver": 18
+    }
+   },
+   {
+    "topic": "Respiratory and Cardiac",
+    "questions": 85,
+    "chapters": {
+     "Childhood Respiratory Disorders": 32,
+     "Fetal Circulation": 9,
+     "Acyanotic Congenital Heart Diseases": 24,
+     "Cyanotic Congenital Heart Diseases": 20
+    }
+   },
+   {
+    "topic": "Renal and Nervous System",
+    "questions": 67,
+    "chapters": {
+     "Pediatric Nephrology": 29,
+     "Pediatric Urology": 15,
+     "Disorders Of The Nervous System": 23
+    }
+   },
+   {
+    "topic": "Endocrinology",
+    "questions": 65,
+    "chapters": {
+     "Disorders Of Thyroid": 18,
+     "Congenital Adrenal Hyperplasia And Related Disorders": 21,
+     "Disorders Of The Pituitary Gland": 13,
+     "Disorders Of Puberty": 13
+    }
+   },
+   {
+    "topic": "Haematology and Oncology",
+    "questions": 98,
+    "chapters": {
+     "Paediatric Hemato Oncology": 23,
+     "Solid Neoplasms Of Childhood": 34,
+     "Pediatric Hematology Introduction, Bleeding, And Clotting Disorders": 18,
+     "Pediatric Anemias": 23
+    }
+   },
+   {
+    "topic": "Musculoskeletal and Rheumatology",
+    "questions": 25,
+    "chapters": {
+     "Musculoskeletal Disorders": 11,
+     "Paediatric Rheumatology": 14
+    }
+   }
+  ]
+ },
+ "pathology": {
+  "subject": "Pathology",
+  "topics": [
+   {
+    "topic": "Cell Injury and Adaptation",
+    "questions": 53,
+    "chapters": {
+     "Cell Death": 22,
+     "Cellular Genetics, Adaptations And Injury": 18,
+     "Intracellular Accumulations, Pathological Calcification And Cellular Ageing": 13
+    }
+   },
+   {
+    "topic": "Inflammation and Repair",
+    "questions": 59,
+    "chapters": {
+     "Acute Inflammation": 24,
+     "Inflammatory Mediators And Granulomatous Inflammation": 22,
+     "Tissue Repair": 13
+    }
+   },
+   {
+    "topic": "Hemodynamics",
+    "questions": 21,
+    "chapters": {
+     "Disorders Of Hemodynamics And Hemostasis": 21
+    }
+   },
+   {
+    "topic": "Genetic Disorders",
+    "questions": 56,
+    "chapters": {
+     "Modes Of Inheritance": 24,
+     "Lysosomal And Glycogen Storage Diseases": 16,
+     "Chromosomal Disorders And Other Genetic Disorders": 16
+    }
+   },
+   {
+    "topic": "Neoplasia",
+    "questions": 69,
+    "chapters": {
+     "Characteristics Of Neoplasms And Epidemiology": 17,
+     "Molecular Basis Of Cancer And Tumor Immunity": 25,
+     "Carcinogenesis, Paraneoplastic Syndromes And Tumor Markers": 27
+    }
+   },
+   {
+    "topic": "Immunopathology",
+    "questions": 65,
+    "chapters": {
+     "Components Of Immune System": 14,
+     "Hypersensitivity And Autoimmunity": 12,
+     "Immunodeficiency Syndromes": 20,
+     "Amyloidosis And Graft Rejection": 19
+    }
+   },
+   {
+    "topic": "Red Cells, Platelets and Coagulation",
+    "questions": 125,
+    "chapters": {
+     "Microcytic Anemia": 13,
+     "Normocytic And Macrocytic Anemia": 17,
+     "Basics Of Hemolysis And Intravascular Hemolysis": 15,
+     "Extravascular Hemolysis": 27,
+     "G6Pd Deficiency And Autoimmune Hemolytic Anemias": 11,
+     "Platelet Disorders": 23,
+     "Coagulation Pathway Disorders": 12,
+     "Blood Products And Transfusion Reactions": 7
+    }
+   },
+   {
+    "topic": "Leukemia, Lymphoma and White Cell Disorders",
+    "questions": 177,
+    "chapters": {
+     "Hodgkin'S Lymphoma": 22,
+     "Acute Lymphocytic Leukemia (All)": 15,
+     "Acute Myeloid Leukemia (Aml)": 19,
+     "Non Hodgkin Lymphomas General Considerations": 8,
+     "Non Hodgkin Lymphomas Low Grade": 27,
+     "Non Hodgkin Lymphomas High Grade": 16,
+     "Multiple Myeloma And Plasma Cell Disorders": 31,
+     "Myelodysplastic Syndrome, Myeloproliferative Syndromes And Histiocytosis": 23,
+     "Leukopenia, Leukocytosis And Lymphadenitis": 16
+    }
+   },
+   {
+    "topic": "Cardiovascular Pathology",
+    "questions": 144,
+    "chapters": {
+     "Hypertensive Vascular Disease And Atherosclerosis": 20,
+     "Aneurysm And Dissection": 11,
+     "Vasculitis": 21,
+     "Vascular Tumors": 20,
+     "Heart Failure And Ischemic Disease": 27,
+     "Myocardial And Pericardial Diseases And Cardiac Tumors": 23,
+     "Congenital And Valvular Heart Disease": 11,
+     "Rheumatic Fever And Endocarditis": 11
+    }
+   },
+   {
+    "topic": "Renal and Lower Urinary Tract",
+    "questions": 71,
+    "chapters": {
+     "Glomerular Diseases": 19,
+     "Tubulointerstitial, Vascular And Cystic Diseases": 20,
+     "Renal Tumors": 22,
+     "Lower Urinary Tract": 10
+    }
+   },
+   {
+    "topic": "Genital Tract and Breast",
+    "questions": 79,
+    "chapters": {
+     "Female Genital Tract": 22,
+     "Male Genital Tract": 28,
+     "The Breast": 29
+    }
+   },
+   {
+    "topic": "GI and Hepatobiliary",
+    "questions": 153,
+    "chapters": {
+     "Alcoholic And Infectious Liver Disease": 31,
+     "Autoimmune And Metabolic Liver Disease": 19,
+     "Neoplasms Of Liver And Biliary Tract": 16,
+     "Gall Bladder And Pancreas": 8,
+     "Esophagus": 17,
+     "Stomach": 25,
+     "Small Intestine": 12,
+     "Large Intestine Non Neoplastic Conditions": 13,
+     "Large Intestine Neoplastic Conditions": 12
+    }
+   },
+   {
+    "topic": "Respiratory Pathology",
+    "questions": 46,
+    "chapters": {
+     "Congenital Anomalies, Ards, Infections": 18,
+     "Obstructive And Restrictive Lung Diseases": 16,
+     "Lung Tumors": 12
+    }
+   },
+   {
+    "topic": "Endocrine Pathology",
+    "questions": 50,
+    "chapters": {
+     "Pituitary ,Parathyroids And Pancreas": 14,
+     "Thyroid Glands": 20,
+     "The Adrenals": 16
+    }
+   },
+   {
+    "topic": "Bone, Joint, Soft Tissue and Skin",
+    "questions": 58,
+    "chapters": {
+     "Developmental Disorders,Infections And Tumors Of Bone": 24,
+     "Joints And Soft Tissue Pathology": 13,
+     "Skin Pathology": 21
+    }
+   },
+   {
+    "topic": "Nervous System Pathology",
+    "questions": 66,
+    "chapters": {
+     "Infective & Vascular Cns Pathology": 17,
+     "Degenerative, Toxic & Metabolic Cns Disorders": 16,
+     "Cns Tumours": 19,
+     "Peripheral Nerves & Neuromuscular Pathology": 14
+    }
+   }
+  ]
+ },
+ "pharmacology": {
+  "subject": "Pharmacology",
+  "topics": [
+   {
+    "topic": "General Pharmacology",
+    "questions": 70,
+    "chapters": {
+     "Pharmacokinetics": 20,
+     "Pharmacodynamics": 21,
+     "Clinical Trials And Miscellaneous": 18,
+     "Pharmacokinetics Calculations": 11
+    }
+   },
+   {
+    "topic": "Autonomic Nervous System",
+    "questions": 103,
+    "chapters": {
+     "Sympathomimetics": 25,
+     "Ans Introduction & Parasympathomimetics": 15,
+     "Parasympatholytics": 23,
+     "Sympatholytics": 22,
+     "Drugs For Glaucoma": 18
+    }
+   },
+   {
+    "topic": "Cardiovascular and Renal Drugs",
+    "questions": 135,
+    "chapters": {
+     "Anti Anginal Drugs": 19,
+     "Heart Failure Drugs": 20,
+     "Antihypertensive Drugs": 23,
+     "Diuretics": 23,
+     "Anti Arrythmic Drugs": 20,
+     "Hypolipidemic Drugs": 11,
+     "Renin Angiotensin Aldosterone System": 12,
+     "Anti Diuretics": 7
+    }
+   },
+   {
+    "topic": "CNS Drugs",
+    "questions": 222,
+    "chapters": {
+     "Sedatives And Hypnotics": 14,
+     "Anti Epileptics I": 28,
+     "Anti Epileptics Ii": 25,
+     "Anti Psychotics": 21,
+     "Anti Manic Drugs": 12,
+     "Drugs For Parkinson’S Disease": 18,
+     "Antidepressant And Antianxiety Drugs": 26,
+     "Opioids Functions And Classification": 19,
+     "Synthetic Opioids": 25,
+     "Opioid Antagonists": 13,
+     "Alcohols": 11,
+     "Drugs For Alzheimer'S Disease And Other Neurodegenerative Disorders": 10
+    }
+   },
+   {
+    "topic": "Antibacterial Drugs",
+    "questions": 111,
+    "chapters": {
+     "General Principles Of Antimicrobial Therapy": 11,
+     "Sulfonamides , Quinolones And Urinary Antiseptics": 21,
+     "Antimicrobials Acting On 30S Subunit": 22,
+     "Antimicrobials Acting On 50S Subunit": 12,
+     "Penicillins": 18,
+     "Cephalosporins, Vancomycin And Carbapenems": 17,
+     "Miscellaneous Antimicrobials": 10
+    }
+   },
+   {
+    "topic": "Antimycobacterial Drugs",
+    "questions": 40,
+    "chapters": {
+     "First Line Drugs For Tuberculosis": 21,
+     "Second Line Drugs For Tuberculosis": 10,
+     "Anti Leprosy Drugs": 9
+    }
+   },
+   {
+    "topic": "Antiviral, Antifungal and Antiparasitic Drugs",
+    "questions": 104,
+    "chapters": {
+     "Antimalarial Drugs": 15,
+     "Antiretroviral Drugs": 25,
+     "Anti Protozoal Agents And Anthelmintic Drugs": 24,
+     "Antifungal Agents": 23,
+     "Anti Virals (Non Retroviral)": 17
+    }
+   },
+   {
+    "topic": "Endocrine and Reproductive Drugs",
+    "questions": 140,
+    "chapters": {
+     "Hypothalamus And Pituitary": 11,
+     "Thyroid And Antithyroid Agents": 13,
+     "Corticosteroids": 21,
+     "Osteoporosis And Calcium Metabolism": 13,
+     "Anti Diabetic Drugs Oral": 19,
+     "Anti Diabetic Drugs Injectable": 19,
+     "Ocps, Estrogens And Progestins": 25,
+     "Androgens And Drugs For Erectile Dysfunction": 10,
+     "Drugs Acting On Uterus": 9
+    }
+   },
+   {
+    "topic": "Autacoids and Anti-inflammatory Drugs",
+    "questions": 50,
+    "chapters": {
+     "Nsaids": 16,
+     "Antimigraine And Antigout Drugs": 14,
+     "Anti Rheumatoid Drugs": 10,
+     "Anti Histamines": 10
+    }
+   },
+   {
+    "topic": "Blood Drugs",
+    "questions": 57,
+    "chapters": {
+     "Antiplatelets, Fibrinolytics And Antifibrinolytics": 15,
+     "Hematinics": 13,
+     "Anticoagulants": 29
+    }
+   },
+   {
+    "topic": "Respiratory and GI Drugs",
+    "questions": 69,
+    "chapters": {
+     "Respiratory System": 27,
+     "Acid Peptic Disorders And Inflammatory Bowel Disease": 21,
+     "Anti Emetics And Drugs Affecting Gastrointestinal Motility": 21
+    }
+   },
+   {
+    "topic": "Cancer Drugs and Immunomodulators",
+    "questions": 105,
+    "chapters": {
+     "Cell Cycle Specific Cytotoxic Drugs": 25,
+     "Non Cell Cycle Specific Cytotoxic Drugs": 28,
+     "Monoclonal Antibodies": 22,
+     "Interleukins, Growth Factors And Targeted Therapies": 30
+    }
+   }
+  ]
+ },
+ "physiology": {
+  "subject": "Physiology",
+  "topics": [
+   {
+    "topic": "General and Cell Physiology",
+    "questions": 99,
+    "chapters": {
+     "Homeostasis And Cellular Physiology": 20,
+     "Cellular Messengers & Receptors": 18,
+     "Transport Across Cell Membrane": 23,
+     "Membrane Potentials": 13,
+     "Body Fluids": 25
+    }
+   },
+   {
+    "topic": "Nerve and Muscle",
+    "questions": 116,
+    "chapters": {
+     "Physiology Of Nerve": 30,
+     "Muscle Physiology I": 29,
+     "Muscle Physiology Ii": 13,
+     "Synapse And Junctional Transmission": 26,
+     "Neurotransmitters": 18
+    }
+   },
+   {
+    "topic": "Nervous System",
+    "questions": 171,
+    "chapters": {
+     "Sensory Receptors": 19,
+     "Somatosensory Pathways": 22,
+     "Special Senses": 19,
+     "Motor Physiology 1": 35,
+     "Motor Physiology 2": 19,
+     "Basal Ganglia And Cerebellum": 19,
+     "Hypothalamus And Limbic System": 11,
+     "Higher Mental Functions": 27
+    }
+   },
+   {
+    "topic": "Respiratory System",
+    "questions": 114,
+    "chapters": {
+     "Regulation Of Respiration": 28,
+     "Functional Anatomy": 12,
+     "Lung Mechanics": 15,
+     "Alveolar Gas Exchange": 14,
+     "Gas Transport In Blood": 18,
+     "Lung Volumes And Lung Function Tests": 15,
+     "Respiratory Adaptations In Hypoxia, Anemia And With Pressure Changes": 12
+    }
+   },
+   {
+    "topic": "Cardiovascular System",
+    "questions": 101,
+    "chapters": {
+     "Cardiac Cycle And Cardiac Output": 22,
+     "Vascular System And Regional Circulation I": 15,
+     "Vascular System And Regional Circulation Ii": 19,
+     "Electrophysiology Of The Heart": 22,
+     "Blood Pressure And Regulation": 23
+    }
+   },
+   {
+    "topic": "Gastrointestinal System",
+    "questions": 76,
+    "chapters": {
+     "Gastrointestinal Secretion And Gastrointestinal Hormones": 28,
+     "Digestion & Absorption": 27,
+     "Gi Peristalsis And Motility": 21
+    }
+   },
+   {
+    "topic": "Renal and Acid-Base",
+    "questions": 78,
+    "chapters": {
+     "Glomerular Filtration Rate, Renal Blood Flow, And Renal Clearance": 27,
+     "Renal Tubular Functions, Urine Concentration And Dilution": 27,
+     "Acid Base Balance, Renal Hormones And Micturition Reflex": 24
+    }
+   },
+   {
+    "topic": "Endocrine System",
+    "questions": 87,
+    "chapters": {
+     "Pituitary And Thyroid": 20,
+     "The Pancreas": 24,
+     "The Adrenals": 19,
+     "Calcium Homeostasis": 24
+    }
+   },
+   {
+    "topic": "Reproduction and Exercise",
+    "questions": 71,
+    "chapters": {
+     "Male Reproductive Physiology": 26,
+     "Female Reproductive Physiology": 30,
+     "Exercise Physiology": 15
+    }
+   }
+  ]
+ },
+ "psychiatry": {
+  "subject": "Psychiatry",
+  "topics": [
+   {
+    "topic": "Foundations and Treatment",
+    "questions": 86,
+    "chapters": {
+     "Theories Of Personality & Defense Mechanisms": 25,
+     "Symptoms And Clinical Manifestations In Psychiatry": 14,
+     "Assessment In Psychiatry": 13,
+     "Specific Treatment Modalities": 22,
+     "Neuropsychiatric Aspects Of Systemic Disorders": 12
+    }
+   },
+   {
+    "topic": "Psychotic and Mood Disorders",
+    "questions": 72,
+    "chapters": {
+     "Schizophrenia": 23,
+     "Other Psychotic Disorders": 9,
+     "Depressive Disorders": 26,
+     "Bipolar And Related Disorders": 14
+    }
+   },
+   {
+    "topic": "Neurocognitive Disorders",
+    "questions": 28,
+    "chapters": {
+     "Delirium": 8,
+     "Dementia": 14,
+     "Amnestic Disorders And Other Neurocognitive Disorders": 6
+    }
+   },
+   {
+    "topic": "Substance Use Disorders",
+    "questions": 27,
+    "chapters": {
+     "Alcohol Related Disorders": 14,
+     "Other Substance Use Disorders": 13
+    }
+   },
+   {
+    "topic": "Anxiety, Stress and Somatic Disorders",
+    "questions": 61,
+    "chapters": {
+     "Anxiety Disorders": 13,
+     "Obsessive Compulsive And Related Disorders": 13,
+     "Trauma And Stress Related Disorders": 11,
+     "Somatoform Disorders": 7,
+     "Factitious Disorders, Malingering And Criminality": 7,
+     "Dissociative Disorders": 10
+    }
+   },
+   {
+    "topic": "Personality, Sleep, Eating and Impulse Disorders",
+    "questions": 46,
+    "chapters": {
+     "Personality Disorders": 12,
+     "Sleep Disorders": 15,
+     "Eating Disorders": 12,
+     "Impulse Control Disorders": 7
+    }
+   },
+   {
+    "topic": "Emergencies, Sexuality and Forensic Psychiatry",
+    "questions": 38,
+    "chapters": {
+     "Psychiatric Emergencies": 12,
+     "Normal Sexuality And Sexual Dysfunction": 10,
+     "Sexual Disorders And Sexual Abuse": 9,
+     "Forensic Psychiatry": 7
+    }
+   },
+   {
+    "topic": "Child Psychiatry",
+    "questions": 38,
+    "chapters": {
+     "Intellectual Disability & Specific Learning Disorders": 8,
+     "Autism Spectrum Disorder": 6,
+     "Attention Deficit Disorders And Disruptive Behaviour": 9,
+     "Neurodevelopmental Motor Disorders": 8,
+     "Special Areas Of Childhood Mental Health": 7
+    }
+   }
+  ]
+ },
+ "radiology": {
+  "subject": "Radiology",
+  "topics": [
+   {
+    "topic": "Imaging Physics and Principles",
+    "questions": 37,
+    "chapters": {
+     "Fundamentals Of X Ray And Ct": 17,
+     "Fundamentals Of Usg And Mri": 20
+    }
+   },
+   {
+    "topic": "Chest and Cardiovascular Imaging",
+    "questions": 55,
+    "chapters": {
+     "Pleural Effusion, Pneumothorax, Pulmonary Edema And Pulmonary Embolism": 19,
+     "Lung Infections, Sarcoidosis And Lung Cancer": 21,
+     "Cardiovascular System": 15
+    }
+   },
+   {
+    "topic": "Neuroimaging",
+    "questions": 41,
+    "chapters": {
+     "Congenital Neural Anomalies, Neurocutaneous Disorders & Cerebrovascular Disorders": 16,
+     "Brain Tumors, Neurodegenerative & Demyelinating Disorders": 25
+    }
+   },
+   {
+    "topic": "Musculoskeletal Imaging",
+    "questions": 24,
+    "chapters": {
+     "Musculosketal System": 24
+    }
+   },
+   {
+    "topic": "Abdominal, Renal and Obstetric Imaging",
+    "questions": 80,
+    "chapters": {
+     "Upper Gi Radiology And Pneumoperitoneum": 13,
+     "Lower Gi Radiology": 17,
+     "Hepatobiliary And Pancreatic Radiology": 15,
+     "Nephroradiology": 26,
+     "Obg Radiology": 9
+    }
+   },
+   {
+    "topic": "Radiotherapy and Nuclear Medicine",
+    "questions": 40,
+    "chapters": {
+     "Radiotherapy": 20,
+     "Nuclear Medicine": 20
+    }
+   }
+  ]
+ }
+}
